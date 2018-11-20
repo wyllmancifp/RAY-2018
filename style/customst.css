@@ -1,0 +1,215 @@
+
+img#CIFP-LOGO {
+	filter: drop-shadow(1.5px 2px 0.5px #2226);
+	z-index: 1000;
+}
+
+.background-image {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  display: block;
+  background-image: url("../resources/image/hexagon_background.jpg");
+
+  width: 100%;
+  height: 100%;
+
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+
+  z-index: -100;
+}
+
+.homework-background {
+	background-image: url("../resources/image/homework_background.jpg") !important;
+}
+
+.teoria-background {
+	background-image: url("../resources/image/books-ancient-background3.jpg") !important;
+	/*	background-image: url("../resources/image/hexagon_background.jpg") !important;*/
+}
+
+div#cifp_section_header {
+	background-color: rgba(255, 255, 255, 1);
+	width: 30%;
+	border-radius: 0% 50% 50% 50%;
+	margin-top: -0.75%;
+	border-right: 0px solid transparent;
+	box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.8);
+
+	animation: fadeInLeftBig 700ms cubic-bezier(0.190,1.000,0.220,1.000) 200ms both;
+}
+
+.white-border {
+	text-shadow: 2px 0 3px rgba(0, 0, 0, 0.8), 
+				-2px 0 3px rgba(0, 0, 0, 0.8), 
+				0 2px 3px rgba(0, 0, 0, 0.8), 
+				0 -2px 3px rgba(0, 0, 0, 0.8), 
+				1px 1px 3px rgba(0, 0, 0, 0.8), 
+				-1px -1px 3px rgba(0, 0, 0, 0.8), 
+				1px -1px 3px rgba(0, 0, 0, 0.8), 
+				-1px 1px 3px rgba(0, 0, 0, 0.8);
+	
+	font-weight: bold;
+	color: rgb(200, 200, 200);
+}
+
+#page-breadcrumb.second{
+	box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+	/*background-image: url(../resources/image/home/tour-bg2.png);*/
+	background-image: url(../resources/image/hexagon_background.jpg);
+	margin-top:2%;
+}
+
+div#cifp_ejercicio {
+	background-color: white;
+	margin-top: 10px;
+	padding-left: 10px;
+}
+
+div.homework_link {
+	width: 100%;
+	display: block;
+	text-align: right;
+	padding-right: 20px;
+}
+
+div#cifp_container_ej{
+	width: auto;
+	max-width: 750px;
+	margin: auto;
+	float: none;
+}
+
+footer {
+	background-color: white;
+	overflow: hidden;
+	width: 100%;
+	bottom: 0px;
+	
+}
+
+img#footer-top-bar {
+	transform: rotate(180deg);
+	position:relative;
+	width: 100%;
+}
+
+div#footer-container{
+	width: 100%;
+}
+
+/*===============================================*/
+div#cifp_navbar {
+	border-radius: 0px;
+	/*overflow: hidden;*/
+	box-shadow: 0px 7px 5px rgba(100, 0, 0, 0.75);
+	padding-bottom:10px;
+}
+
+div#cifp_navbar::before
+{
+	width: 0; 
+	height: 0; 
+	border-bottom: 15px solid white; 
+	border-right: 1000px solid transparent;
+	position: absolute;
+	top: -15px;
+	left: 0px;
+}
+
+div#cifp_navbar::after
+{
+	width: 0; 
+	height: 0; 
+	border-top: 15px solid white; 
+	border-left: 1000px solid transparent;
+	position: absolute;
+	top: 100%;
+	right: 0px;
+	filter:drop-shadow(-3px 8px 5px rgba(250, 0, 0, 0.75));
+	
+}
+
+/*===============================================*/
+#home-slider h1 {
+	margin-top: 75px !important;
+}
+
+#home-slider .slider-house  {
+	z-index: 1;
+}
+
+div#home-card.slide-text {
+	background-color: white;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	top:-10px;
+}
+
+#home-card-top
+{
+	width: 0; 
+	height: 0; 
+	border-bottom: 20px solid white; 
+	border-right: 450px solid transparent;
+	position: absolute;
+	top: -19px;
+	left: 0px;
+	z-index: 1;
+}
+
+#home-card-bottom
+{
+	width: 0;
+	height: 0; 
+	border-top: 20px solid white;
+	border-left: 450px solid transparent;
+	position: absolute;
+	top: 100%;
+	right: 0px;
+	z-index: 1;
+}
+
+/* ========================================================================= */
+/* Responsive section        */
+/*    - Extra small <@screen-xs-max>*/
+@media (max-width: 575px ) { 
+	img#CIFP-LOGO {
+		filter: drop-shadow(1.5px 2px 0.5px #f22f);
+	}
+}
+
+/*    - Small <@screen-sm-min @screen-sm-max>*/
+@media (min-width: 576px) and (max-width: 767px) { 
+	img#CIFP-LOGO {
+		filter: drop-shadow(1.5px 2px 0.5px #2f2f);
+	}
+}
+
+/*    - Medium <@screen-md-min @screen-md-max>*/
+@media (min-width: 768px) and (max-width: 991px) { 
+	img#CIFP-LOGO {
+		filter: drop-shadow(1.5px 2px 0.5px #22ff);
+	}
+}
+
+/*    - Large <@screen-lg-min>*/
+@media (min-width: 992px) and (max-width: 1200px){ 
+	img#CIFP-LOGO {
+		filter: drop-shadow(1.5px 2px 0.5px #ff2f);
+	}
+}
+
+/*    - Extra large <@screen-lg-min>*/
+@media (min-width: 1200px){ 
+	img#CIFP-LOGO {
+		filter: drop-shadow(1.5px 2px 0.5px #000f);
+	}
+}
+/* ========================================================================= */

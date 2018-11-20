@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+	<!-- ================================================================================================================ -->
+	<!-- Cabeza de una estructura de una página web <head> ... </head> ================================================== -->
+	<!--    - Configuración base de nuestra página web y el navegador. 
+		    - Enlaces a recursos externos, estilos y scripts     -->
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Recursos JavaScript | RAY 2018</title>
+		<meta name="description" content="Contenido, teoría y ejercicios de la asignatura RAY - 2018">
+		<meta name="author" content="G.R.P.">
+
+		<!-- Enlaces a archivos externos que definen estilos css -->
+		<link href="../../style/bootstrap.min.css" rel="stylesheet">
+		<link href="../../style/font-awesome.min.css" rel="stylesheet">
+		<link href="../../style/animate.min.css" rel="stylesheet"> 
+		<link href="../../style/lightbox.css" rel="stylesheet"> 
+		<link href="../../style/main.css" rel="stylesheet">
+		<link href="../../style/responsive.css" rel="stylesheet">
+
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+
+		<!-- Enlaces a las imágenes a usar como iconos del navegador -->
+		<link rel="shortcut icon" href="../../resources/image/ico/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../resources/image/ico/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../resources/image/ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../resources/image/ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="../../resources/image/ico/apple-touch-icon-57-precomposed.png">
+
+	</head>
+	<!-- ================================================================================================================ -->
+
+
+	<!-- ================================================================================================================ -->
+	<!-- Cuerpo de una estructura de una página web <body> ... </body> ================================================== -->
+	<!--    - Sección contenedora de todos los elementos renderizables por el navegador. 
+		    - Cargas "tardías" de recursos externos -->
+	<body>
+		<!-- ================================================================================================================ -->
+		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		<header id="header">
+			<div class="container">
+
+				<div class="row">
+					<div class="col-sm-12 overflow">
+						<div class="social-icons pull-right">
+							<ul class="nav nav-pills">
+								<li><a href=""><i class="fa fa-facebook"></i></a></li>
+								<li><a href=""><i class="fa fa-twitter"></i></a></li>
+								<li><a href=""><i class="fa fa-google-plus"></i></a></li>
+								<li><a href=""><i class="fa fa-dribbble"></i></a></li>
+								<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+							</ul>
+						</div> 
+					</div>
+				</div>
+
+			</div> <!-- div#ray-title.container -->
+			<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+			<div id="cifp_navbar" class="navbar navbar-inverse" role="banner">
+				<div class="container">
+
+					<div class="navbar-header">
+						<!-- Menú tipo botón expandible para la versión móvil -->
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- Logo y enlace a la página de inicio -->
+						<a class="navbar-brand" href="../../index.html">
+							<h1><img id="CIFP-LOGO" src="../../resources/image/logo.png" alt="logo"></h1>
+						</a>
+					</div>
+
+					<!-- Barra de navegación -->
+					<div class="collapse navbar-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active"><a href="../../index.html">Inicio</a></li>
+
+							<li class="dropdown"><a href="../teoria.html">Teoría <i class="fa fa-angle-down"></i></a>
+								<ul role="menu" class="sub-menu">
+									<li><a href="../teoria/tema001.html">Tema 1</a></li>
+								</ul>
+							</li>
+
+							<li class="dropdown"><a href="../practicas.html">Prácticas <i class="fa fa-angle-down"></i></a>
+								<ul role="menu" class="sub-menu">
+									<li><a href="../ejercicios/ejercicio001.html">Ejercicios 1</a></li>
+									<li><a href="../ejercicios/ejercicio002.html">Ejercicios 2</a></li>
+								</ul>
+							</li>
+
+							<li class="dropdown"><a href="../portfolio.html">Portfolio <i class="fa fa-angle-down"></i></a>
+								<ul role="menu" class="sub-menu">
+									<li><a href="../portfolio/galeria.html">Galeria</a></li>
+									<li><a href="../portfolio/cv.html ">Curriculum Vitae</a></li>
+								</ul>
+							</li>
+
+							<li class="dropdown"><a href="../recursos.html">Recursos <i class="fa fa-angle-down"></i></a>
+								<ul role="menu" class="sub-menu">
+									<li><a href="cheetsheet.html ">Plantilla Triangle</a></li>
+									<li><a href="rec-html.html ">HMTL 5</a></li>
+									<li><a href="rec-css.html ">CSS 3</a></li>
+									<li><a href="rec-bootstrap.html ">BootStrap</a></li>
+									<li><a href="rec-javascript.html ">JavaScript</a></li>
+									<li><a href="rec-threejs.html ">Three.js</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+
+					<div class="search">
+						<form role="form">
+							<i class="fa fa-search"></i>
+							<div class="field-toggle">
+								<input type="text" class="search-form" autocomplete="off" placeholder="Search">
+							</div>
+						</form>
+					</div>
+
+				</div>
+
+			</div> <!-- div#ray-navbar.navbar.navbar-inverse -->
+
+			<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		</header>
+		<!--/#header - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		<!-- ================================================================================================================ -->
+
+		<!-- ================================================================================================================ -->
+		<section id="page-breadcrumb">
+			<div class="vertical-center sun">
+				<div class="container">
+					<div class="row">
+						<div class="action">
+							<div class="col-sm-12">
+								<h1 class="title">JavaScript</h1>
+								<p>Introducción y recursos básicos</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/#action-->
+
+		<section id="shortcodes">
+			<div class="container">
+				<div id="buttons-container">
+					<div class="row" style="font-size:17px">
+						<div class="col-md-12">
+							<h1 class="page-header text-center">¿Qué es JavaScript?</h1>
+						</div>
+
+						<div class="col-md-1"></div>
+
+						<div class="col-md-10">
+							<blockquote class="text-center"> Un programa es un trozo de texto (código) escrito por un programador, formando un conjunto de instrucciones que fuerza directamente al ordenador a cumplir su cometido. </blockquote>
+
+							<p> JavaScript es un lenguaje de scripting multiplataforma y orientado a objetos, introducido en 1995, usado principalmente para páginas web, compatible con todos los navegadores y que forma un estándar de desarrollo que ahora también se extiende a dispositivos o programas de propósito general multiplataforma.  </p>
+
+							<p> Fue creado por Brendan Eich, al principio el lenguaje se llamaba Mocha, luego lo renombró  como LiveScript hasta que finalmente le cambiaron el nombre a JavaScript. JavaScript no tiene casi nada que ver con el lenguaje de programación Java. </p> 
+
+							<p>Después de esta aceptación fuera de Netscape, un documento estándar fue escrito para describir la forma en que el lenguaje JavaScript debería escribirse y funcionar para hacer compatible otros programas con JavaScript. Se llamó el estándar ECMAScript, después la Ecma International Organization hizo la estandarización. En la práctica, los términos ECMAScript y JavaScript se pueden usar indistintamente, son dos nombres para el mismo lenguaje. </p>
+
+							<p> JavaScript puedes usarlo como lenguaje de programación del lado del cliente (se ejecuta en nuestro ordenador, no en el servidor). Cuando un usuario accede a una página web cualquiera, envía desde su navegador una petición a un servidor web que nos devuelve “el servicio”. Nos brinda una página web que visualizamos inmediatamente en nuestro navegador, es decir, esa petición envía al ordenador del usuario código HTML junto a código JavaScript. </p>
+
+							<p> JavaScript no está limitado solo a los navegadores web. Las implementaciones de Javascript en el lado del servidor ha ido ganando adeptos desde el año 2000, siendo NodeJS una de las más populares, usándose así para el desarrollo de aplicaciones web escalables. NodeJS está construido sobre el intérprete o motor de JavaScript de Google Chrome (motor V8). </p>
+
+							<p> Ya sea con navegadores o con NodeJS del lado del servidor,  no son las únicas plataformas donde se emplea JavaScript. Algunas bases de datos como MongoDB usan JavaScript para sus consultas. En realidad JavaScript puede estar en cualquier plataforma que tenga instalado un intérprete de JavaScript, como dijimos anteriormente, es un lenguaje muy flexible en todos los aspectos. </p>
+
+						</div>
+						
+						<div class="col-md-1"></div>
+
+					</div><!--div.row-->
+				</div><!--/#buttons-container-->
+
+				<hr>
+
+				<div id="feature-container">
+					<div class="row" style="font-size:17px">
+						<div class="col-md-12">
+							<h2 class="page-header">Sintaxis y conceptos básicos</h2>
+
+							<p> - JavaScript es case-sensitive (distingue mayúsculas y minúsculas) y utiliza el conjunto de caracteres Unicode. </br> 
+							- Un identificador ha de empezar con una letra, un guión bajo (_) o un símbolo de dólar ($); los valores subsiguientes puede ser números o letras que incluyen tanto desde la "A" hasta la "Z" (mayúsculas) como de la "a" hasta la "z". </br>
+							- Los identificadores no pueden ser iguales a ninguna de las palabras reservadas del lenguaje. </br>
+							- No se tienen en cuenta los espacios en blanco y las nuevas líneas </br>
+							- Los bloques de código se escriben entre llaves { }
+							- Las instrucciones son llamadas Sentencias y son separadas por un punto y coma (;). </br>
+							- Para comentarios de una sola línea, se empieza ésta con // </br>
+							- Para comentarios multilínea se empieza con /* y se termina con */ </br>
+							- Para ejecutar código JS en HTML se introduce entre etiquetas "script" o enlazando un archivo externo de código en el atributo "src" de dicha etiqueta. </br>
+							- Para visualizar textos por pantalla o consola (usado principalmente para depuración y fases de desarrollo) se puede usar console.log("Hola mundo");</p>
+
+
+							<pre>
+									<xmp style="text-align: left; font-size:12px">
+<script>
+	// Este es un comentario de una sola línea
+
+	/*
+		Esto es un comentario multilínea
+	*/
+
+	{
+		// Bloque de código
+	}
+
+	console.log("Texto a mostrar en la consola");
+</script>
+
+<script type="text/javascript" src="../script/jquery.js"></script>
+									</xmp></pre>
+							
+
+						</div>
+
+						
+					</div>
+				</div><!--/#feature-container-->
+
+				<hr>
+
+				<div id="feature-container">
+					<div class="row" style="font-size:17px">
+						<div class="col-md-12">
+							<h2 class="page-header">Variables y tipos de datos base</h2>
+
+							<blockquote>
+							Una variable se utiliza para almacenar y hacer referencia a otro valor en el espacio de memoria del programa.
+							</blockquote>
+
+							<p> Declarar variables consiste en definir y de paso informar al sistema de que vas a utilizar una variable. Javascript cuenta con la palabra "var" que utilizaremos cuando queramos declarar una o varias variables. Como es lógico, se utiliza esa palabra para definir la variable antes de utilizarla. Aunque Javascript no nos obligue a declarar explícitamente las variables, es aconsejable (y buena práctica) declararlas antes de utilizarlas. Se puede asignar un valor a la variable cuando se está declarando y e permite declarar varias variables en la misma línea, siempre que se separen por comas. </p>
+
+							<p> Se le llama ámbito de las variables al lugar donde estas están disponibles. </br> 
+							- Las variables globales son las que están declaradas en el ámbito más amplio posible. Éstas son accesibles desde cualquier lugar de la página. </br>
+							- Las variables locales se declaran dentro de un bloque de código de una función. Éstas serán accesibles desde cualquier parte del bloque donde se haya definido, incluyendo bloques anidados.</p>
+
+							<p> En las variables podemos guardar distintos tipos de información. Los tipos de datos básicos son booleanos (verdadero o falso), numéricos (enteros o reales) o textos (cadenas de caracteres entre comillas), listas o vectores de los tipos básicos  y objetos</p>
+
+							<pre>
+							<xmp style="text-align: left; font-size:12px">
+// Declaración de variables globales
+var variable001;
+
+var variable002 = 1; // Variable declarada y asignando un tipo numerico
+var variable003 = "hola"; // Variable declarada y asignando un tipo texto o "String"
+
+var variable004, variable005;
+
+variable004 = true; // Asignación de un valor booleano a una variable
+variable005 = 25; // Asignación de un valor numérico a una variable
+
+// --------------------------------
+// Declaración de variables locales
+function funcion001(){
+	var variableLocal001 = 10;
+
+	variableLocal001 = 20; // Ámbito correcto de asignación
+}
+
+variableLocal001 = 30; // Ámbito incorrecto de asignación
+
+// --------------------------------
+// Declaración de vectores de datos
+var lista001 = [ 'hola', 'casa', 'perro' , 'escuela']; // Array de 4 valores textuales
+var lista002 = [ 1, 5, 3 ]; // Array de 3 valores numéricos
+
+console.log("Primer valor de la lista 001: " + lista001[0]); // Mostrando por consola el primer valor de la lista 001
+// Los índices de un array de 4 valores van de 0 a 3
+
+// --------------------------------
+// Declaración de un objecto
+var objecto001 = {
+	atributo001 : "hola mundo",
+	atributo002 : true,
+	atributo003 : 10,
+	atributo004 : [10, 2, 5, 0],
+	atributo005: {
+		subAtributo001 : "Interno"
+	}
+};
+
+console.log(objecto001.atributo001);
+console.log(objecto001["atributo001"]);
+
+console.log(objecto001.atributo005.subAtributo001);
+
+							</xmp></pre>
+
+						</div>
+
+						
+					</div>
+				</div><!--/#feature-container-->
+
+				<hr>
+
+				<div id="tab-container">
+					<div class="row" style="font-size:17px">
+						<div class="col-md-12">
+							<h2 class="page-header">Operadores y estructuras de control</h2>
+
+							<p> Los operadores permiten manipular el valor de las variables, realizar operaciones matemáticas con sus valores y comparar diferentes variables. De esta forma, los operadores permiten a los programas realizar cálculos complejos y tomar decisiones lógicas en función de comparaciones y otros tipos de condiciones. </p>
+
+							<p> Los tipos básicos de operadores son: </br>
+							- Asignaciones (binario): =, +=, -=, *=, /= </br>
+							- Incremento/Decremento (Unario): ++, -- </br>
+							- Aritméticos (binarios): +, -, *, /, % </br>
+							- Relacionales (binarios): <, >, <= , >= </br>
+							- Igualdad, desigualdad: ==, != </br> 
+							- Condicionales: &&, || </p>
+
+							<pre>
+							<xmp style="text-align: left; font-size:12px">
+// Ejemplos de los operadores básicos
+var numerico001 = 0;
+
+// Asignaciones
+numerico001 = 10; // El valor de la variable numerico001 se ha asignado en 10
+numerico001 += 9; // Se le asigna a la variable su valor anterior sumandole 9
+numerico001 -= 17; // Se le asigna a la variable su valor anterior restandole 17
+numerico001 *= 2; // Se le asigna a la variable su valor anterior multiplicandolo por 2
+numerico001 /= 2; // Se le asigna a la variable su valor anterior dividiendolo por 2
+
+// Incremento/Decremento
+numerico001++; // Se le suma 1 al valor actual de la variable
+numerico001--; // Se le resta 1 al valor actual de la variable
+
+// Aritmeticos
+numerico001 = 1 + 1; // Suma
+numerico001 = 1 - 1; // Resta
+numerico001 = 1 * 2; // Multiplicación
+numerico001 = 4 / 2; // Division
+numerico001 = 3 % 2; // Resto de la division entera
+
+var booleano001 = true;
+
+// Relacionales
+booleano001 = 2 > 1; // Mayor que
+booleano001 = 1 < 2; // Menor que
+booleano001 = 5 >= 5; // Mayo o igual que
+booleano001 = 4 <= 5; // Menor o igual que
+
+// Igualdad/Desigualdad
+booleano001 = (5 == 5); // Igual a
+booleano001 = (3 != 5); // Distinto a
+booleano001 = ("hola" == "hola");
+
+// Condicionales
+var booleano002 = false;
+
+booleano001 = (true && true); // Operador "y" lógico
+booleano001 = (booleano002 || true); // Operador "o" lógico
+
+							</xmp>
+							</pre>
+
+							<p> Las sentencias de bloque son el tipo de sentencias más básicas y se utilizan para agrupar otras sentencias. Suelen estar definidas por una cabecera definitoria y un bloque de codigo definido entre llaves { }. Éstos bloques se usan principalmente para el control del flujo de ejecución del programa. </p>
+
+							<p> Sentencias condicionales: se define como un conjunto de comandos que se ejecutan si una condición es verdadera. JavaScript soporta las dos sentencias condicionales base: if...else y switch </p>
+
+							<blockquote>if (condición) {sentencia_1;} else { sentencia_2;}</blockquote>
+
+							<pre>
+							<xmp style="text-align: left; font-size:12px">
+// Ejemplos de sentencias condicionales if
+var condicion = true;
+var valor001 = 10;
+var valor002 = 5;
+var texto001 = "hola";
+var texto002 = "hola";
+var texto003 = "Adios";
+
+if (condicion) {
+	console.log("Como condicion es true, este texto debería mostrarse por consola");
+}
+
+if (valor001 <= 1) {
+	console.log("La valor 001 es 10, mayor que 1, por la tanto la condicion no se cumple y este texto no debería mostrarse por consola");
+} else {
+	console.log("Este texto debería mostrarse por consola como alternativa al fallar la primera condición");
+}
+
+if (texto001 == texto003) { // "hola" es distinto de "adios" por lo tanto la condición falla
+	console.log("Este texto no debería mostrarse");
+} else if (texto001 == texto002) {
+	console.log("Este texto sí debería mostrarse");
+} else {
+	console.log("Este texto no debería mostrarse");
+}
+							</xmp>
+							</pre>
+
+							<blockquote>switch (expresión) { </br>
+							  case etiqueta_1: </br>
+							    sentencias_1 </br>
+							    [break;] </br>
+							  case etiqueta_2: </br>
+							    sentencias_2 </br>
+							    [break;] </br>
+							    ... </br>
+							  default: </br>
+							    sentencias_por_defecto </br>
+							    [break;] </br>
+							}
+							</blockquote>
+
+							<pre>
+							<xmp style="text-align: left; font-size:12px">
+// Ejemplo de la sentencia condicional switch
+var variableDeSeleccion = "castillo";
+var segundaVariableNumerica = 1;
+
+switch (variableDeSeleccion) {
+	case "casa": // Si el contenido de la variable variableDeSeleccion es igual a "casa"
+		console.log("Se ha seleccionado una casa");
+		break;
+	case "hotel": // Si el contenido de la variable variableDeSeleccion es igual a "hotel"
+		console.log("Se ha seleccionado un hotel");
+		segundaVariableNumerica = 4;
+		break;
+	case "castillo": // Si el contenido de la variable variableDeSeleccion es igual a "castillo"
+		console.log("Se ha seleccionado un castillo");
+		segundaVariableNumerica = 3;
+		break;
+	// Si el contenido de la variable variableDeSeleccion no coincide con ninguna de las anteriores
+	default:
+		console.log("Selección no definida");
+		segundaVariableNumerica = 5;
+		break;
+}
+
+switch (segundaVariableNumerica) {
+	case 1:
+		console.log("El resultado es 1");
+		break;
+	case 2:
+		console.log("El resultado es 2");
+		break;
+	case 3:
+		console.log("El resultado es 3");
+		break;
+	case 4:
+		console.log("El resultado es 4");
+		break;
+	default:
+		console.log("Valor del resultado no definido");
+}
+
+							</xmp>
+							</pre>
+
+							<p> Bucles: se define como un conjunto de comandos que se ejecutan repetidamente cierta cantidad de veces. JavaScript soporta los dos tipos base de bucles: for... y while</p>
+
+							<blockquote>for ([expresionInicial]; [condicion]; [expresionIncremento]) </br>
+							sentencia</blockquote>
+
+							<pre>
+							<xmp style="text-align: left; font-size:12px">
+// Ejemplos de bucle for
+// Se usa la variable i como índice de ejecución y con valor inicial igual a 0
+// Se condiciona la repetición del bucle a que dicha variable sea menor que 10
+// Por ultimo se indica que en cada repetición la variable i va a aumentar su valor
+//   en 1 "i++"
+for (var i = 0; i < 10; i++) {
+	console.log(" - " + i);
+}
+
+// Se usa la variable i como referencia a cada uno de los objetos del array listaNumeros
+// Se usa un valor por iteración del bloque, recorriendolos en orden.
+var listaNumeros = [3, 5, 7, 9];
+for (var i of listaNumeros) {
+   console.log(i);
+}
+							</xmp>
+							</pre>
+
+							<blockquote>while (condicion) </br>
+							  sentencia</blockquote>
+
+							 <pre>
+							<xmp style="text-align: left; font-size:12px">
+// Ejemplos de bulces while
+// Se usa la variable valorCondicion para valorar la condición de continuación
+// Si la condición es verdadera, se ejecuta el bloque y después se vuelve a valorar
+//   si la condición sigue siendo verdadera para continuar o para el bucle
+var valorCondicion = 0;
+var valorNumerico = 0;
+
+while (valorCondicion < 5) {
+	valorCondicion++;
+
+	valorNumerico += valorCondicion;
+
+	console.log("- Resultado(" + valorCondicion + "): " + valorNumerico);
+}
+
+// Este tipo de bucle, se ejecuta primero el bloque de código y después se evalua la condición 
+//   para saber si se continua con las repeticiones del bucle o se detiene.
+var variableCondicional = false;
+
+do {
+	console.log("hola")
+} while (variableCondicional);
+							</xmp>
+							</pre>
+
+						</div>
+					</div>
+				</div><!--/#table-container-->
+
+            <div id="accordion-container">
+                <h2 class="page-header">Funciones, definición y uso</h2>
+
+
+                
+            </div><!--/#accordion-container-->
+
+            <div id="progressbar-container">
+                <h2 class="page-header">Eventos Html más comunes</h2>
+                
+
+            </div><!--/#progressbar-container-->
+
+            <div id="map-container">
+                <h2 class="page-header">Introducción a JQuery</h2>
+                <!--<div id="gmap"></div>-->
+            </div><!--/#map-container-->
+
+            <div id="video-container">
+                <div class="row" style="font-size:17px">
+
+
+                </div>
+            </div><!--/#video-container-->
+
+        </div>
+    </section>           
+		<!-- ================================================================================================================ -->
+
+		<!-- ================================================================================================================ -->
+		<footer id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 text-center bottom-separator">
+						<img src="../resources/image/home/under.png" class="img-responsive inline" alt="">
+					</div>
+					
+					<div class="col-md-4 col-sm-6">
+						<div class="testimonial bottom">
+							<h2>Interfaces de usuario</h2>
+							<div class="media">
+								<div class="pull-left">
+									<a href="#"><img src="../resources/image/home/profile1.png" alt=""></a>
+								</div>
+								<div class="media-body">
+									<blockquote>Las interfaces básicas de usuario son aquellas que incluyen cosas como menús, ventanas, teclado, ratón, y algunos otros sonidos que la computadora hace, en general, todos aquellos canales por los cuales se permite la comunicación entre el hombre y la computadora.</blockquote>
+									<h3><a target="_blank" href="http://hcibib.org/tcuid/">- Lewis y Rieman (1993)</a></h3>
+								</div>
+							</div>
+							<!--
+							<div class="media">
+								<div class="pull-left">
+									<a href="#"><img src="resources/image/home/profile2.png" alt=""></a>
+								</div>
+								<div class="media-body">
+									<blockquote>Capicola nisi flank sed minim sunt aliqua rump pancetta leberkas venison eiusmod.</blockquote>
+									<h3><a href="">- Abraham Josef</a></h3>
+								</div>
+							</div> 
+							-->
+						</div> 
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="contact-info bottom">
+							<h2>Contacto</h2>
+							<address>
+							E-mail: <a href="mailto:someone@example.com">...@....com</a> <br> 
+							Teléfono: +.. (...) ... ... <br> 
+							Fax: +.. (...) ... ... <br> 
+							</address>
+
+							<h2>Dirección</h2>
+							<address>
+							....., .. .... ....., <br> 
+							.... ...., <br> 
+							......, ... ... <br> 
+							España <br> 
+							</address>
+						</div>
+					</div>
+
+					<!--
+					<div class="col-md-4 col-sm-12">
+						<div class="contact-form bottom">
+							<h2>Send a message</h2>
+							<form id="main-contact-form" name="contact-form" method="post" action="sendemail.php">
+								<div class="form-group">
+									<input type="text" name="name" class="form-control" required="required" placeholder="Name">
+								</div>
+								<div class="form-group">
+									<input type="email" name="email" class="form-control" required="required" placeholder="Email Id">
+								</div>
+								<div class="form-group">
+									<textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Your text here"></textarea>
+								</div>
+								<div class="form-group">
+									<input type="submit" name="submit" class="btn btn-submit" value="Submit">
+								</div>
+							</form>
+						</div>
+					</div>
+					-->
+
+					<div class="col-sm-12">
+						<div class="copyright-text text-center">
+							<p>CIFP César Manrique 2018.</p>
+							<p>Modificación de la plantilla: <a target="_blank" href="">G.R.P.</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--/#footer-->
+		<!-- ================================================================================================================ -->
+
+		<!-- ================================================================================================================ -->
+		<!-- Carga "tardía" de librerías de scripts externos -->
+		<script type="text/javascript" src="../script/jquery.js"></script>
+		<script type="text/javascript" src="../script/bootstrap.min.js"></script>
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+		<script type="text/javascript" src="../script/gmaps.js"></script>
+		<script type="text/javascript" src="../script/jquery.fitvids.js"></script>
+		<script type="text/javascript" src="../script/holder.js"></script>
+		<script type="text/javascript" src="../script/lightbox.min.js"></script>
+		<script type="text/javascript" src="../script/wow.min.js"></script>
+		<script type="text/javascript" src="../script/main.js"></script>
+		<!-- ================================================================================================================ -->
+	</body>
+	<!-- ================================================================================================================ -->
+</html>
