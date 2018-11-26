@@ -13,19 +13,25 @@
 		<meta name="author" content="G.R.P.">
 
 		<!-- Enlaces a archivos externos que definen estilos css -->
-		<link href="/style/imported-styles.css" rel="stylesheet">
+		<link href="../../style/external/bootstrap.min.css" rel="stylesheet">
+		<link href="../../style/external/font-awesome.min.css" rel="stylesheet">
+		<link href="../../style/external/animate.min.css" rel="stylesheet">
+		<link href="../../style/external/lightbox.css" rel="stylesheet">
+		<link href="../../style/main.css" rel="stylesheet">
+		<link href="../../style/responsive.css" rel="stylesheet">
+		<link href="../../style/customst.css" rel="stylesheet">
 
 		<!--[if lt IE 9]>
-			<script src="js/html5shiv.js"></script>
-			<script src="js/respond.min.js"></script>
+			<script src="../../script/external/html5shiv.js"></script>
+			<script src="../../script/external/respond.min.js"></script>
 		<![endif]-->
 
 		<!-- Enlaces a las imágenes a usar como iconos del navegador -->
-		<link rel="shortcut icon" href="/resources/image/ico/favicon.ico">
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/resources/image/ico/apple-touch-icon-144-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/resources/image/ico/apple-touch-icon-114-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/resources/image/ico/apple-touch-icon-72-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" href="/resources/image/ico/apple-touch-icon-57-precomposed.png">
+		<link rel="shortcut icon" href="../../resources/image/ico/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../resources/image/ico/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../resources/image/ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../resources/image/ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="../../resources/image/ico/apple-touch-icon-57-precomposed.png">
 
 	</head>
 	<!-- ================================================================================================================ -->
@@ -36,100 +42,112 @@
 	<!--    - Sección contenedora de todos los elementos renderizables por el navegador. 
 		    - Cargas "tardías" de recursos externos -->
 	<body class="teoria-background">
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+			<div class="loader-section section-left"></div>
+			<div class="loader-section section-right"></div>
+		</div>
+
+		<div id="content">
 		<!--<div class="background-image homework-background"></div>-->
 		<!-- ================================================================================================================ -->
 		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<div id="custom-header"></div>
-		<!--/#header - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<!-- ================================================================================================================ -->
+			<div id="custom-header"></div>
+			<!--/#header - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+			<!-- ================================================================================================================ -->
 
-		<!-- ================================================================================================================ -->
-		<section id="page-breadcrumb" class="second">
-			<div class="vertical-center sun">
-				<div class="container">
-					<div class="row">
-						
-						<div class="action">
-							<div id="cifp_section_header" class="post-thumb col-md-2 col-sm-2">
-								<a href="#"><img src="../../resources/image/teoria/CLI-GUI-NUI.png" class="img-responsive" alt=""></a>
+			<!-- ================================================================================================================ -->
+			<section id="page-breadcrumb" class="second">
+				<div class="vertical-center sun">
+					<div class="container">
+						<div class="row">
+							
+							<div class="action main-slider">
+								<div id="cifp_section_header" class="post-thumb col-md-2 col-sm-2">
+									<a href="#"><img src="../../resources/image/teoria/CLI-GUI-NUI.png" class="img-responsive" alt=""></a>
 
-							</div>
-							<div class="col-md-6 col-sm-6" style="margin-top: 2%;">
-								<h1 class="title white-border">Introducción a las interfaces de usuario</h1>
-								<p class="white-border">Tema 1</p>
+								</div>
+								<div class="col-md-6 col-sm-6" style="margin-top: 2%;">
+									<h1 class="title white-border">Introducción a las interfaces de usuario</h1>
+									<p class="white-border">Tema 1</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<!--/#page-breadcrumb-->
-		<!-- ================================================================================================================ -->
+			</section>
+			<!--/#page-breadcrumb-->
+			<!-- ================================================================================================================ -->
 
 
-		<section id="blog-details">
-        <div class="container">
+			<section id="blog-details">
+	        <div class="container">
 
-            <div class="row">
-                <div id="cifp_container_ej" class="col-md-9 col-sm-7">
-                    <div class="row">
-                         <div class="col-md-12 col-sm-12">
-                            <div class="single-blog blog-details two-column">
-                                
-                                <div id="cifp_ejercicio" class="post-content overflow">
-                                    <h2 class="post-title bold"><a href="#"> ... </a></h2>
-                                    <!--<h3 class="post-author"><a href="#">Posted by micron News</a></h3>-->
-                                    <br/>
-                                    <p> ...  <br> <br>
+	            <div class="row">
+	                <div id="cifp_container_ej" class="col-md-9 col-sm-7">
+	                    <div class="row">
+	                         <div class="col-md-12 col-sm-12">
+	                            <div class="single-blog blog-details two-column">
+	                                
+	                                <div id="cifp_ejercicio" class="post-content overflow">
+	                                    <h2 class="post-title bold"><a href="#"> ... </a></h2>
+	                                    <!--<h3 class="post-author"><a href="#">Posted by micron News</a></h3>-->
+	                                    <br/>
+	                                    <p> ...  <br> <br>
 
-                                    ... <br> <br>
+	                                    ... <br> <br>
 
-                                    ... </p>
+	                                    ... </p>
 
-                                    <br/>
+	                                    <br/>
 
-                                    <h2 class="post-title bold"><a href="#"> ... </a></h2>
-                                    
-                                    <br/>
+	                                    <h2 class="post-title bold"><a href="#"> ... </a></h2>
+	                                    
+	                                    <br/>
 
-                                    <blockquote> 
-                                          <p> ... <br> <br>
+	                                    <blockquote> 
+	                                          <p> ... <br> <br>
 
-                                          ... <br> <br>
+	                                          ... <br> <br>
 
-                                          ... <br> <br>
+	                                          ... <br> <br>
 
-                                          ... <br> <br>
+	                                          ... <br> <br>
 
-                                          ... </p>
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                 </div>
-                
-            </div>
-        </div>
-    </section>
-    <!--/#blog-->
+	                                          ... </p>
+	                                    </blockquote>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                 </div>
+	                
+	            </div>
+	        </div>
+	    </section>
+	    <!--/#blog-->
 
 
-		<!-- ================================================================================================================ -->
-		<div id="custom-footer"></div>
+			<!-- ================================================================================================================ -->
+			<div id="custom-footer"></div>
+		</div>
 		<!--/#footer-->
 		<!-- ================================================================================================================ -->
 
 		<!-- ================================================================================================================ -->
 		<!-- Carga "tardía" de librerías de scripts externos -->
-		<script type="text/javascript" src="/script/jquery.js"></script>
-		<script type="text/javascript" src="/script/bootstrap.min.js"></script>
-		<script type="text/javascript" src="/script/lightbox.min.js"></script>
-		<script type="text/javascript" src="/script/wow.min.js"></script>
-		<script type="text/javascript" src="/script/main.js"></script>
-		<script type="text/javascript" src="/script/CustomComponents/customHeader.js"></script>
-		<script type="text/javascript" src="/script/CustomComponents/customFooter.js"></script>
-		<script type="text/javascript" src="/script/CustomComponents.js"></script>
+		<script type="text/javascript" src="../../script/external/jquery.js"></script>
+		<script type="text/javascript" src="../../script/external/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../../script/external/lightbox.min.js"></script>
+		<script type="text/javascript" src="../../script/external/wow.min.js"></script>
+		
+		<script type="text/javascript" src="../../script/main.js"></script>
+		<script type="text/javascript" src="../../script/CustomComponents/customHeader.js"></script>
+		<script type="text/javascript" src="../../script/CustomComponents/customFooter.js"></script>
+		<script type="text/javascript" src="../../script/CustomComponents.js"></script>
+		<script>
+			setPageLocationType (2); 
+		</script>
 		<!-- ================================================================================================================ -->
 	</body>
 	<!-- ================================================================================================================ -->

@@ -1,2 +1,2 @@
-# RAY-2018
-Página web de la asignatura Realización de proyectos multimedia interactivos
+# RAY-Template
+plantilla html para la asignatura RAY

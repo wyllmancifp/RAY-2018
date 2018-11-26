@@ -13,520 +13,661 @@
 		<meta name="author" content="G.R.P.">
 
 		<!-- Enlaces a archivos externos que definen estilos css -->
-		<link href="/style/imported-styles.css" rel="stylesheet">
+		<link href="../../style/external/bootstrap.min.css" rel="stylesheet">
+		<link href="../../style/external/font-awesome.min.css" rel="stylesheet">
+		<link href="../../style/external/animate.min.css" rel="stylesheet">
+		<link href="../../style/lexternal/ightbox.css" rel="stylesheet">
+		<link href="../../style/main.css" rel="stylesheet">
+		<link href="../../style/responsive.css" rel="stylesheet">
+		<link href="../../style/customst.css" rel="stylesheet">
 
 		<!--[if lt IE 9]>
-			<script src="js/html5shiv.js"></script>
-			<script src="js/respond.min.js"></script>
+			<script src="../../script/external/html5shiv.js"></script>
+			<script src="../../script/external/respond.min.js"></script>
 		<![endif]-->
 
 		<!-- Enlaces a las imágenes a usar como iconos del navegador -->
-		<link rel="shortcut icon" href="/resources/image/ico/favicon.ico">
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/resources/image/ico/apple-touch-icon-144-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/resources/image/ico/apple-touch-icon-114-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/resources/image/ico/apple-touch-icon-72-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" href="/resources/image/ico/apple-touch-icon-57-precomposed.png">
+		<link rel="shortcut icon" href="../../resources/image/ico/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../resources/image/ico/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../resources/image/ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../resources/image/ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="../../resources/image/ico/apple-touch-icon-57-precomposed.png">
 
 	</head>
 	<!-- ================================================================================================================ -->
 
 
-	<!-- ================================================================================================================ -->
-	<!-- Cuerpo de una estructura de una página web <body> ... </body> ================================================== -->
-	<!--    - Sección contenedora de todos los elementos renderizables por el navegador. 
-		    - Cargas "tardías" de recursos externos -->
+<!-- ================================================================================================================ -->
+<!-- Cuerpo de una estructura de una página web <body> ... </body> ================================================== -->
+<!--    - Sección contenedora de todos los elementos renderizables por el navegador. 
+	    - Cargas "tardías" de recursos externos -->
 	<body>
-		<!-- ================================================================================================================ -->
-		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<div id="custom-header"></div>
-		<!--/#header - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<!-- ================================================================================================================ -->
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+			<div class="loader-section section-left"></div>
+			<div class="loader-section section-right"></div>
+		</div>
 
-		<!-- ================================================================================================================ -->
-		<section id="page-breadcrumb">
-			<div class="vertical-center sun">
-				<div class="container">
-					<div class="row">
-						<div class="action">
-							<div class="col-sm-12">
-								<h1 class="title">JavaScript</h1>
-								<p>Introducción y recursos básicos</p>
+		<div id="content">
+			<div id="custom-header"></div>
+
+<!-- ================================================================================================================ -->
+			<section id="page-breadcrumb">
+				<div class="vertical-center sun">
+					<div class="container">
+						<div class="row">
+							<div class="action">
+								<div class="col-sm-12">
+									<h1 class="title">JavaScript</h1>
+									<p>Introducción y recursos básicos</p>
+								</div>
 							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--/#action-->
+
+			<section id="javascriptSection">
+				<div class="container">
+					<div id="introduccion-container">
+						<div class="row" style="font-size:17px">
+							<div class="col-md-12">
+								<h1 class="page-header text-center"><b>¿Qué es JavaScript?</b></h1>
+							</div>
+
+							<div class="col-md-1"></div>
+
+							<div class="col-md-10">
+								<blockquote class="text-center"> Un programa es un trozo de texto (código) escrito por un programador, formando un conjunto de instrucciones que fuerza directamente al ordenador a cumplir su cometido. </blockquote>
+
+								<p> JavaScript es un lenguaje de scripting multiplataforma y orientado a objetos, introducido en 1995, usado principalmente para páginas web, compatible con todos los navegadores y que forma un estándar de desarrollo que ahora también se extiende a dispositivos o programas de propósito general multiplataforma.  </p>
+
+								<p> Fue creado por Brendan Eich, al principio el lenguaje se llamaba Mocha, luego lo renombró  como LiveScript hasta que finalmente le cambiaron el nombre a JavaScript. JavaScript no tiene casi nada que ver con el lenguaje de programación Java. </p> 
+
+								<p>Después de esta aceptación fuera de Netscape, un documento estándar fue escrito para describir la forma en que el lenguaje JavaScript debería escribirse y funcionar para hacer compatible otros programas con JavaScript. Se llamó el estándar ECMAScript, después la Ecma International Organization hizo la estandarización. En la práctica, los términos ECMAScript y JavaScript se pueden usar indistintamente, son dos nombres para el mismo lenguaje. </p>
+
+								<p> JavaScript puedes usarlo como lenguaje de programación del lado del cliente (se ejecuta en nuestro ordenador, no en el servidor). Cuando un usuario accede a una página web cualquiera, envía desde su navegador una petición a un servidor web que nos devuelve “el servicio”. Nos brinda una página web que visualizamos inmediatamente en nuestro navegador, es decir, esa petición envía al ordenador del usuario código HTML junto a código JavaScript. </p>
+
+								<p> JavaScript no está limitado solo a los navegadores web. Las implementaciones de Javascript en el lado del servidor ha ido ganando adeptos desde el año 2000, siendo NodeJS una de las más populares, usándose así para el desarrollo de aplicaciones web escalables. NodeJS está construido sobre el intérprete o motor de JavaScript de Google Chrome (motor V8). </p>
+
+								<p> Ya sea con navegadores o con NodeJS del lado del servidor,  no son las únicas plataformas donde se emplea JavaScript. Algunas bases de datos como MongoDB usan JavaScript para sus consultas. En realidad JavaScript puede estar en cualquier plataforma que tenga instalado un intérprete de JavaScript, como dijimos anteriormente, es un lenguaje muy flexible en todos los aspectos. </p>
+
+							</div>
+							
+							<div class="col-md-1"></div>
+
+						</div><!--div.row-->
+					</div><!--/#buttons-container-->
+
+					<hr>
+
+					<div id="sintaxis-container">
+						<div class="row" style="font-size:17px">
+							<div class="col-md-12">
+								<h2 class="page-header"><b>Sintaxis y conceptos básicos</b></h2>
+
+								<p> - JavaScript es case-sensitive (distingue mayúsculas y minúsculas) y utiliza el conjunto de caracteres Unicode. </br> 
+								- Un identificador ha de empezar con una letra, un guión bajo (_) o un símbolo de dólar ($); los valores subsiguientes puede ser números o letras que incluyen tanto desde la "A" hasta la "Z" (mayúsculas) como de la "a" hasta la "z". </br>
+								- Los identificadores no pueden ser iguales a ninguna de las palabras reservadas del lenguaje. </br>
+								- No se tienen en cuenta los espacios en blanco y las nuevas líneas </br>
+								- Los bloques de código se escriben entre llaves { }
+								- Las instrucciones son llamadas Sentencias y son separadas por un punto y coma (;). </br>
+								- Para comentarios de una sola línea, se empieza ésta con // </br>
+								- Para comentarios multilínea se empieza con /* y se termina con */ </br>
+								- Para ejecutar código JS en HTML se introduce entre etiquetas "script" o enlazando un archivo externo de código en el atributo "src" de dicha etiqueta. </br>
+								- Para visualizar textos por pantalla o consola (usado principalmente para depuración y fases de desarrollo) se puede usar console.log("Hola mundo");</p>
+
+
+								<pre>
+										<xmp style="text-align: left; font-size:12px">
+	<script>
+		// Este es un comentario de una sola línea
+
+		/*
+			Esto es un comentario multilínea
+		*/
+
+		{
+			// Bloque de código
+		}
+
+		console.log("Texto a mostrar en la consola");
+	</script>
+
+	<script type="text/javascript" src="../script/jquery.js"></script>
+										</xmp></pre>
+								
+
+							</div>
+
+							
+						</div>
+					</div><!--/#feature-container-->
+
+					<hr>
+
+					<div id="variables-container">
+						<div class="row" style="font-size:17px">
+							<div class="col-md-12">
+								<h2 class="page-header"><b>Variables y tipos de datos base</b></h2>
+
+								<blockquote>
+								Una variable se utiliza para almacenar y hacer referencia a otro valor en el espacio de memoria del programa.
+								</blockquote>
+
+								<p> Declarar variables consiste en definir y de paso informar al sistema de que vas a utilizar una variable. Javascript cuenta con la palabra "var" que utilizaremos cuando queramos declarar una o varias variables. Como es lógico, se utiliza esa palabra para definir la variable antes de utilizarla. Aunque Javascript no nos obligue a declarar explícitamente las variables, es aconsejable (y buena práctica) declararlas antes de utilizarlas. Se puede asignar un valor a la variable cuando se está declarando y e permite declarar varias variables en la misma línea, siempre que se separen por comas. </p>
+
+								<p> Se le llama ámbito de las variables al lugar donde estas están disponibles. </br> 
+								- Las variables globales son las que están declaradas en el ámbito más amplio posible. Éstas son accesibles desde cualquier lugar de la página. </br>
+								- Las variables locales se declaran dentro de un bloque de código de una función. Éstas serán accesibles desde cualquier parte del bloque donde se haya definido, incluyendo bloques anidados.</p>
+
+								<p> En las variables podemos guardar distintos tipos de información. Los tipos de datos básicos son booleanos (verdadero o falso), numéricos (enteros o reales) o textos (cadenas de caracteres entre comillas), listas o vectores de los tipos básicos  y objetos</p>
+
+								<pre>
+									<xmp style="text-align: left; font-size:12px">
+	// Declaración de variables globales
+	var variable001;
+
+	var variable002 = 1; // Variable declarada y asignando un tipo numerico
+	var variable003 = "hola"; // Variable declarada y asignando un tipo texto o "String"
+
+	var variable004, variable005;
+
+	variable004 = true; // Asignación de un valor booleano a una variable
+	variable005 = 25; // Asignación de un valor numérico a una variable
+
+	// --------------------------------
+	// Declaración de variables locales
+	function funcion001(){
+		var variableLocal001 = 10;
+
+		variableLocal001 = 20; // Ámbito correcto de asignación
+	}
+
+	variableLocal001 = 30; // Ámbito incorrecto de asignación
+
+	// --------------------------------
+	// Declaración de vectores de datos
+	var lista001 = [ 'hola', 'casa', 'perro' , 'escuela']; // Array de 4 valores textuales
+	var lista002 = [ 1, 5, 3 ]; // Array de 3 valores numéricos
+
+	console.log("Primer valor de la lista 001: " + lista001[0]); // Mostrando por consola el primer valor de la lista 001
+	// Los índices de un array de 4 valores van de 0 a 3
+
+	// --------------------------------
+	// Declaración de un objecto
+	var objecto001 = {
+		atributo001 : "hola mundo",
+		atributo002 : true,
+		atributo003 : 10,
+		atributo004 : [10, 2, 5, 0],
+		atributo005: {
+			subAtributo001 : "Interno"
+		}
+	};
+
+	console.log(objecto001.atributo001);
+	console.log(objecto001["atributo001"]);
+
+	console.log(objecto001.atributo005.subAtributo001);
+									</xmp>
+								</pre>
+							</div>
+						</div>
+					</div><!--/#feature-container-->
+
+					<hr>
+
+					<div id="operadores-container">
+						<div class="row" style="font-size:17px">
+							<div class="col-md-12">
+								<h2 class="page-header"><b>Operadores y estructuras de control</b></h2>
+
+								<p> Los operadores permiten manipular el valor de las variables, realizar operaciones matemáticas con sus valores y comparar diferentes variables. De esta forma, los operadores permiten a los programas realizar cálculos complejos y tomar decisiones lógicas en función de comparaciones y otros tipos de condiciones. </p>
+
+								<p> Los tipos básicos de operadores son: </br>
+								- Asignaciones (binario): =, +=, -=, *=, /= </br>
+								- Incremento/Decremento (Unario): ++, -- </br>
+								- Aritméticos (binarios): +, -, *, /, % </br>
+								- Relacionales (binarios): <, >, <= , >= </br>
+								- Igualdad, desigualdad: ==, != </br> 
+								- Condicionales: &&, || </p>
+
+								<pre>
+									<xmp style="text-align: left; font-size:12px">
+	// Ejemplos de los operadores básicos
+	var numerico001 = 0;
+
+	// Asignaciones
+	numerico001 = 10; // El valor de la variable numerico001 se ha asignado en 10
+	numerico001 += 9; // Se le asigna a la variable su valor anterior sumandole 9
+	numerico001 -= 17; // Se le asigna a la variable su valor anterior restandole 17
+	numerico001 *= 2; // Se le asigna a la variable su valor anterior multiplicandolo por 2
+	numerico001 /= 2; // Se le asigna a la variable su valor anterior dividiendolo por 2
+
+	// Incremento/Decremento
+	numerico001++; // Se le suma 1 al valor actual de la variable
+	numerico001--; // Se le resta 1 al valor actual de la variable
+
+	// Aritmeticos
+	numerico001 = 1 + 1; // Suma
+	numerico001 = 1 - 1; // Resta
+	numerico001 = 1 * 2; // Multiplicación
+	numerico001 = 4 / 2; // Division
+	numerico001 = 3 % 2; // Resto de la division entera
+
+	var booleano001 = true;
+
+	// Relacionales
+	booleano001 = 2 > 1; // Mayor que
+	booleano001 = 1 < 2; // Menor que
+	booleano001 = 5 >= 5; // Mayo o igual que
+	booleano001 = 4 <= 5; // Menor o igual que
+
+	// Igualdad/Desigualdad
+	booleano001 = (5 == 5); // Igual a
+	booleano001 = (3 != 5); // Distinto a
+	booleano001 = ("hola" == "hola");
+
+	// Condicionales
+	var booleano002 = false;
+
+	booleano001 = (true && true); // Operador "y" lógico
+	booleano001 = (booleano002 || true); // Operador "o" lógico
+
+									</xmp>
+								</pre>
+
+								<p> Las sentencias de bloque son el tipo de sentencias más básicas y se utilizan para agrupar otras sentencias. Suelen estar definidas por una cabecera definitoria y un bloque de codigo definido entre llaves { }. Éstos bloques se usan principalmente para el control del flujo de ejecución del programa. </p>
+
+								<p> Sentencias condicionales: se define como un conjunto de comandos que se ejecutan si una condición es verdadera. JavaScript soporta las dos sentencias condicionales base: if...else y switch </p>
+
+								<blockquote>if (condición) {sentencia_1;} else { sentencia_2;}</blockquote>
+
+								<pre>
+									<xmp style="text-align: left; font-size:12px">
+	// Ejemplos de sentencias condicionales if
+	var condicion = true;
+	var valor001 = 10;
+	var valor002 = 5;
+	var texto001 = "hola";
+	var texto002 = "hola";
+	var texto003 = "Adios";
+
+	if (condicion) {
+		console.log("Como condicion es true, este texto debería mostrarse por consola");
+	}
+
+	if (valor001 <= 1) {
+		console.log("La valor 001 es 10, mayor que 1, por la tanto la condicion no se cumple y este texto no debería mostrarse por consola");
+	} else {
+		console.log("Este texto debería mostrarse por consola como alternativa al fallar la primera condición");
+	}
+
+	if (texto001 == texto003) { // "hola" es distinto de "adios" por lo tanto la condición falla
+		console.log("Este texto no debería mostrarse");
+	} else if (texto001 == texto002) {
+		console.log("Este texto sí debería mostrarse");
+	} else {
+		console.log("Este texto no debería mostrarse");
+	}
+									</xmp>
+								</pre>
+
+								<blockquote>switch (expresión) { </br>
+								  case etiqueta_1: </br>
+								    sentencias_1 </br>
+								    [break;] </br>
+								  case etiqueta_2: </br>
+								    sentencias_2 </br>
+								    [break;] </br>
+								    ... </br>
+								  default: </br>
+								    sentencias_por_defecto </br>
+								    [break;] </br>
+								}
+								</blockquote>
+
+								<pre>
+									<xmp style="text-align: left; font-size:12px">
+	// Ejemplo de la sentencia condicional switch
+	var variableDeSeleccion = "castillo";
+	var segundaVariableNumerica = 1;
+
+	switch (variableDeSeleccion) {
+		case "casa": // Si el contenido de la variable variableDeSeleccion es igual a "casa"
+			console.log("Se ha seleccionado una casa");
+			break;
+		case "hotel": // Si el contenido de la variable variableDeSeleccion es igual a "hotel"
+			console.log("Se ha seleccionado un hotel");
+			segundaVariableNumerica = 4;
+			break;
+		case "castillo": // Si el contenido de la variable variableDeSeleccion es igual a "castillo"
+			console.log("Se ha seleccionado un castillo");
+			segundaVariableNumerica = 3;
+			break;
+		// Si el contenido de la variable variableDeSeleccion no coincide con ninguna de las anteriores
+		default:
+			console.log("Selección no definida");
+			segundaVariableNumerica = 5;
+			break;
+	}
+
+	switch (segundaVariableNumerica) {
+		case 1:
+			console.log("El resultado es 1");
+			break;
+		case 2:
+			console.log("El resultado es 2");
+			break;
+		case 3:
+			console.log("El resultado es 3");
+			break;
+		case 4:
+			console.log("El resultado es 4");
+			break;
+		default:
+			console.log("Valor del resultado no definido");
+	}
+									</xmp>
+								</pre>
+
+								<p> Bucles: se define como un conjunto de comandos que se ejecutan repetidamente cierta cantidad de veces. JavaScript soporta los dos tipos base de bucles: for... y while</p>
+
+								<blockquote>for ([expresionInicial]; [condicion]; [expresionIncremento]) </br>
+								sentencia</blockquote>
+
+								<pre>
+									<xmp style="text-align: left; font-size:12px">
+	// Ejemplos de bucle for
+	// Se usa la variable i como índice de ejecución y con valor inicial igual a 0
+	// Se condiciona la repetición del bucle a que dicha variable sea menor que 10
+	// Por ultimo se indica que en cada repetición la variable i va a aumentar su valor
+	//   en 1 "i++"
+	for (var i = 0; i < 10; i++) {
+		console.log(" - " + i);
+	}
+
+	// Se usa la variable i como referencia a cada uno de los objetos del array listaNumeros
+	// Se usa un valor por iteración del bloque, recorriendolos en orden.
+	var listaNumeros = [3, 5, 7, 9];
+	for (var i of listaNumeros) {
+	   console.log(i);
+	}
+									</xmp>
+								</pre>
+
+								<blockquote>while (condicion) </br>
+								  sentencia</blockquote>
+
+								<pre>
+									<xmp style="text-align: left; font-size:12px">
+	// Ejemplos de bulces while
+	// Se usa la variable valorCondicion para valorar la condición de continuación
+	// Si la condición es verdadera, se ejecuta el bloque y después se vuelve a valorar
+	//   si la condición sigue siendo verdadera para continuar o para el bucle
+	var valorCondicion = 0;
+	var valorNumerico = 0;
+
+	while (valorCondicion < 5) {
+		valorCondicion++;
+
+		valorNumerico += valorCondicion;
+
+		console.log("- Resultado(" + valorCondicion + "): " + valorNumerico);
+	}
+
+	// Este tipo de bucle, se ejecuta primero el bloque de código y después se evalua la condición 
+	//   para saber si se continua con las repeticiones del bucle o se detiene.
+	var variableCondicional = false;
+
+	do {
+		console.log("hola")
+	} while (variableCondicional);
+									</xmp>
+								</pre>
+							</div>
+						</div>
+					</div><!--/#table-container-->
+
+				<div id="funciones-container">
+					<div class="row" style="font-size:17px">
+						<div class="col-md-12">
+							<h2 class="page-header"><b>Funciones, definición y uso</b></h2>
+
+							<p> Una función es una porción de código reusable que puede ser llamada en cualquier momento desde nuestro programa. Se compone de una cabecera definitoria con un identificador y los parámetros a usar entre paréntesis. Seguido de un bloque de código a ejecutar cada vez que se llame a dicha función. </p>
+
+							<blockquote> function nombre_funcion(parametros) { <br>
+								instrucciones; <br>
+							}</blockquote>
+
+							<pre>
+								<xmp style="text-align: left; font-size:12px">
+
+	// Ejemplos de definición y llamadas a funciones
+	var variableGlobal001 = "texto global";
+
+	// Definición de una función que no usa parámetros y no retorna valor alguno
+	function holaMundo () {
+		console.log("hola mundo");
+	}
+
+	// Llamada a la funcion
+	holaMundo();
+
+	//------------------------------
+
+	// Definición de una función que usa dos parámetros de entrada y no retorna valor alguno
+	// La variable textoAMostrar contendrá el valor de tipo string a mostrar por consola
+	// La variable numeroVeces se usará como contador de las veces a mostrar el texto anterior
+	function mostrarTexto (textoAMostrar, numeroVeces) {
+		
+		for (var i = 1; i < numeroVeces; i++) {
+			console.log("El texto a mostrar por consola es: " + textoAMostrar);
+		}
+	}
+
+	// Llamadas a la función;
+	mostrarTexto("hola", 2);
+	mostrarTexto("feo", 1);
+	mostrarTexto("HOLA MUNDO", 20);
+
+	//------------------------------
+
+	// Definición de una función que usa dos parámetros de entrada y retorna un valor numérico
+	// Las variables primerValor y segundoValor contendran los valores numéricos a sumar
+	function sumarValores (primerValor, segundoValor) {
+		console.log("Sumando " + primerValor + " y " + segundoValor);
+		return primerValor + segundoValor;
+	}
+
+	// Llamadas a la función
+	var variableResultado = sumarValores(2, 2);
+	variableResultado = sumarValores(1, 2);
+
+
+
+								</xmp>
+							</pre>
+						</div>
+	                </div>
+	            </div><!--/#accordion-container-->
+
+	            <div id="dom-container">
+	            	<div class="row" style="font-size:17px">
+	            		<div class="col-md-12">
+	               			 <h2 class="page-header"><b>HTML5 y JavaScript. Eventos y el árbol DOM</b></h2>
+	                
+	                		<p> El modelo de objeto de documento (DOM) es una interfaz de programación para los documentos HTML y XML. Facilita una representación estructurada del documento y define de qué manera los programas pueden acceder, al fin de modificar, tanto su estructura, estilo y contenido. El DOM da una representación del documento como un grupo de nodos y objetos estructurados que tienen propiedades y métodos. Esencialmente, conecta las páginas web a scripts o lenguajes de programación. 
+	                		<br> <br>
+	            			El DOM es una representación completamente orientada al objeto de la página web y puede ser modificado con un lenguaje de script como JavaScript. Listamos a continuación un conjunto de las funcionalidades más usadas.</p>
+
+							<pre>
+								<xmp style="text-align: left; font-size:12px">
+
+	/*Ejemplo html
+
+	<div id="demoId">contenido</div>
+	<ul id="myList"></ul>
+	 <button id="botonId" type="button">Click Me!</button> 
+
+	*/
+	// -----------------------------------------
+	//Acceder a un elemento html usando un id
+	// document.getElementById(id)
+
+	document.getElementById("demoId");
+
+	// -----------------------------------------
+	//Acceder a un elemento, o conjuntos de elemento de la página html usando el nombre del mismo del elemento, por ejemplo todos los
+	// h1, body, div, ...
+	// element.getElementsByTagName(name)
+
+	element.getElementsByTagName("div");
+
+	// -----------------------------------------
+	//Crear un elemento html, en tiempo de ejecución, usando un nombre de tipo de elemento, por ejemplo h1, body, div, ...
+	// document.createElement(name)
+
+	document.createElement("div")
+
+	// -----------------------------------------
+	//Añadir un elemento html como hijo de otro concreto 
+	// parentNode.appendChild(node)
+
+	var node = document.createElement("LI");                 // Cear un elemento <li>
+	var textnode = document.createTextNode("Water");         // Crear un elemento de texto
+	node.appendChild(textnode);                              // Añadir el texto como hijo del elemento <li>
+	document.getElementById("myList").appendChild(node);     // Append <li> to <ul> with 
+
+	// -----------------------------------------
+	//Acceder al contenido html de un elemento html concreto
+	// element.innerHTML
+
+	document.getElementById("demoId").innerHTML = "Texto como contenido de un elemento"; 
+
+	// -----------------------------------------
+	//Acceder a un valor de estilo de un elemento html, por ejemplo "left"
+	// element.style
+
+	document.getElementById("demoId").style.color = "red"; 
+
+	// -----------------------------------------
+	//Función javascript para cambiar el valor de scroll actual de nuestra página html
+	// window.scrollTo(xpos, ypos)
+
+	window.scrollTo(500, 0); 
+
+	// -----------------------------------------
+	//Función javascript que se lanza de forma automática cuando se termian de cargar todos los
+	// elementos hmtl en el árbol DOM
+	// window.onload
+
+	function mostrarSaludo() {
+		console.log("hola mundo");
+	}
+
+	window.onload = function() {
+	  mostrarSaludo();
+	};
+
+	// -----------------------------------------
+	//Función javascript a lanzar como evento de click en un elemento html concreto
+	function muestraMensaje() {
+		console.log("mostrar texto al pulsar un boton");
+	}
+
+	document.getElementById("botonId").onclick = muestraMensaje;
+	/*
+	<A HREF="index.html" onClick="muestraMensaje();"> Home </A>
+	*/
+
+	// -----------------------------------------
+	// Algunos otros eventos comunes son:
+	// onchange, onmouseover, onmouseout, onkeydown, ...
+
+								</xmp>
+							</pre>
+						</div>
+					</div>
+				</div>
+
+				<div id="jquery-container">
+					<div class="row" style="font-size:17px">
+						<div class="col-md-12">
+							<h2 class="page-header"><b>Introducción a JQuery</b></h2>
+							<p> jQuery es una biblioteca multiplataforma de JavaScript, creada inicialmente por John Resig, que permite simplificar la manera de interactuar con los documentos HTML, manipular el árbol DOM, manejar eventos, desarrollar animaciones y agregar interacción con la técnica AJAX a páginas web. Fue presentada el 14 de enero de 2006 en el BarCamp NYC. jQuery es la biblioteca de JavaScript más utilizada. </p>
+							<pre>
+								<xmp style="text-align: left; font-size:12px">
+	//Conceptos básicos
+	//  Importar la librería
+	<script type="text/javascript" src="jquery.js"></script> 
+
+	// Función equivalente a window.onload pero, la versión de JQuery se lanza en cuanto se carga el árbol DOM 
+	// y la de window.onload espera al árbol DOM y todos los recursos como imágenes, videos, etc...
+	$(document).ready( function() { ... } );
+
+	// Función equivalente a document.getElementById() pero más potente pudiendo buscar elementos por id, por clases
+	// css y otros atributos
+	$(SelectorJquery);
+
+	// Definir eventos de un elemento html usando jquery
+	$("p").bind("click", function() {
+	   alert( "Evento lanzado desde un click" );
+	}); 
+
+	// Otros eventos comunes pueden ser: focus(), blur(), keyup(), mouseover(), mouseup(), resize(), submit()
+
+	// Algunos ejemplos de efectos visuales
+	$("p").hide();        // Ocultar un elemento
+	$("p").show();        // Mostrar un elemento
+	$("p").toggle();      // Si estaba oculto, mostrarlo; si era visible, ocultarlo
+	$("p").show("slow");  // Mostrar el elemento con una animación muy suave
+	$("p").slideToggle("fast"); // Desplegar/ocultar el elemento con una animación muy rápida
+	$("p").fadeOut();     // El elemento desaparece con un fundido muy suave
+
+	// Editar estilos de elementos html desde JQuery
+	var colorTemp = $("p").css("color");
+	$("p").css("color","red");
+	$("p").css({ color: "red", background: "blue", font-weight: "bold" });
+
+	// Editar el contenido de un elemento html
+	var contenidoTemp = $("#contenidos").html();
+	$("#contenidos").html("<h1>Contenidos</h1><p>Cargando...</p>");
+
+	// Añadir o quitar una clase css a un elemento html
+	$("p").toggleClass("seleccionado");
+	$("p").addClass("seleccionado");
+	$("p").removeClass("seleccionado");
+								</xmp>
+							</pre>
+							<br><br><br>
+							<hr>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<!--/#action-->
+<!-- ================================================================================================================ -->
+			<div id="custom-footer"></div>
+<!-- ================================================================================================================ -->
+		</div><!--div#content-->
+<!-- ================================================================================================================ -->
 
-		<section id="shortcodes">
-			<div class="container">
-				<div id="buttons-container">
-					<div class="row" style="font-size:17px">
-						<div class="col-md-12">
-							<h1 class="page-header text-center">¿Qué es JavaScript?</h1>
-						</div>
-
-						<div class="col-md-1"></div>
-
-						<div class="col-md-10">
-							<blockquote class="text-center"> Un programa es un trozo de texto (código) escrito por un programador, formando un conjunto de instrucciones que fuerza directamente al ordenador a cumplir su cometido. </blockquote>
-
-							<p> JavaScript es un lenguaje de scripting multiplataforma y orientado a objetos, introducido en 1995, usado principalmente para páginas web, compatible con todos los navegadores y que forma un estándar de desarrollo que ahora también se extiende a dispositivos o programas de propósito general multiplataforma.  </p>
-
-							<p> Fue creado por Brendan Eich, al principio el lenguaje se llamaba Mocha, luego lo renombró  como LiveScript hasta que finalmente le cambiaron el nombre a JavaScript. JavaScript no tiene casi nada que ver con el lenguaje de programación Java. </p> 
-
-							<p>Después de esta aceptación fuera de Netscape, un documento estándar fue escrito para describir la forma en que el lenguaje JavaScript debería escribirse y funcionar para hacer compatible otros programas con JavaScript. Se llamó el estándar ECMAScript, después la Ecma International Organization hizo la estandarización. En la práctica, los términos ECMAScript y JavaScript se pueden usar indistintamente, son dos nombres para el mismo lenguaje. </p>
-
-							<p> JavaScript puedes usarlo como lenguaje de programación del lado del cliente (se ejecuta en nuestro ordenador, no en el servidor). Cuando un usuario accede a una página web cualquiera, envía desde su navegador una petición a un servidor web que nos devuelve “el servicio”. Nos brinda una página web que visualizamos inmediatamente en nuestro navegador, es decir, esa petición envía al ordenador del usuario código HTML junto a código JavaScript. </p>
-
-							<p> JavaScript no está limitado solo a los navegadores web. Las implementaciones de Javascript en el lado del servidor ha ido ganando adeptos desde el año 2000, siendo NodeJS una de las más populares, usándose así para el desarrollo de aplicaciones web escalables. NodeJS está construido sobre el intérprete o motor de JavaScript de Google Chrome (motor V8). </p>
-
-							<p> Ya sea con navegadores o con NodeJS del lado del servidor,  no son las únicas plataformas donde se emplea JavaScript. Algunas bases de datos como MongoDB usan JavaScript para sus consultas. En realidad JavaScript puede estar en cualquier plataforma que tenga instalado un intérprete de JavaScript, como dijimos anteriormente, es un lenguaje muy flexible en todos los aspectos. </p>
-
-						</div>
-						
-						<div class="col-md-1"></div>
-
-					</div><!--div.row-->
-				</div><!--/#buttons-container-->
-
-				<hr>
-
-				<div id="feature-container">
-					<div class="row" style="font-size:17px">
-						<div class="col-md-12">
-							<h2 class="page-header">Sintaxis y conceptos básicos</h2>
-
-							<p> - JavaScript es case-sensitive (distingue mayúsculas y minúsculas) y utiliza el conjunto de caracteres Unicode. </br> 
-							- Un identificador ha de empezar con una letra, un guión bajo (_) o un símbolo de dólar ($); los valores subsiguientes puede ser números o letras que incluyen tanto desde la "A" hasta la "Z" (mayúsculas) como de la "a" hasta la "z". </br>
-							- Los identificadores no pueden ser iguales a ninguna de las palabras reservadas del lenguaje. </br>
-							- No se tienen en cuenta los espacios en blanco y las nuevas líneas </br>
-							- Los bloques de código se escriben entre llaves { }
-							- Las instrucciones son llamadas Sentencias y son separadas por un punto y coma (;). </br>
-							- Para comentarios de una sola línea, se empieza ésta con // </br>
-							- Para comentarios multilínea se empieza con /* y se termina con */ </br>
-							- Para ejecutar código JS en HTML se introduce entre etiquetas "script" o enlazando un archivo externo de código en el atributo "src" de dicha etiqueta. </br>
-							- Para visualizar textos por pantalla o consola (usado principalmente para depuración y fases de desarrollo) se puede usar console.log("Hola mundo");</p>
-
-
-							<pre>
-									<xmp style="text-align: left; font-size:12px">
-<script>
-	// Este es un comentario de una sola línea
-
-	/*
-		Esto es un comentario multilínea
-	*/
-
-	{
-		// Bloque de código
-	}
-
-	console.log("Texto a mostrar en la consola");
-</script>
-
-<script type="text/javascript" src="../script/jquery.js"></script>
-									</xmp></pre>
-							
-
-						</div>
-
-						
-					</div>
-				</div><!--/#feature-container-->
-
-				<hr>
-
-				<div id="feature-container">
-					<div class="row" style="font-size:17px">
-						<div class="col-md-12">
-							<h2 class="page-header">Variables y tipos de datos base</h2>
-
-							<blockquote>
-							Una variable se utiliza para almacenar y hacer referencia a otro valor en el espacio de memoria del programa.
-							</blockquote>
-
-							<p> Declarar variables consiste en definir y de paso informar al sistema de que vas a utilizar una variable. Javascript cuenta con la palabra "var" que utilizaremos cuando queramos declarar una o varias variables. Como es lógico, se utiliza esa palabra para definir la variable antes de utilizarla. Aunque Javascript no nos obligue a declarar explícitamente las variables, es aconsejable (y buena práctica) declararlas antes de utilizarlas. Se puede asignar un valor a la variable cuando se está declarando y e permite declarar varias variables en la misma línea, siempre que se separen por comas. </p>
-
-							<p> Se le llama ámbito de las variables al lugar donde estas están disponibles. </br> 
-							- Las variables globales son las que están declaradas en el ámbito más amplio posible. Éstas son accesibles desde cualquier lugar de la página. </br>
-							- Las variables locales se declaran dentro de un bloque de código de una función. Éstas serán accesibles desde cualquier parte del bloque donde se haya definido, incluyendo bloques anidados.</p>
-
-							<p> En las variables podemos guardar distintos tipos de información. Los tipos de datos básicos son booleanos (verdadero o falso), numéricos (enteros o reales) o textos (cadenas de caracteres entre comillas), listas o vectores de los tipos básicos  y objetos</p>
-
-							<pre>
-							<xmp style="text-align: left; font-size:12px">
-// Declaración de variables globales
-var variable001;
-
-var variable002 = 1; // Variable declarada y asignando un tipo numerico
-var variable003 = "hola"; // Variable declarada y asignando un tipo texto o "String"
-
-var variable004, variable005;
-
-variable004 = true; // Asignación de un valor booleano a una variable
-variable005 = 25; // Asignación de un valor numérico a una variable
-
-// --------------------------------
-// Declaración de variables locales
-function funcion001(){
-	var variableLocal001 = 10;
-
-	variableLocal001 = 20; // Ámbito correcto de asignación
-}
-
-variableLocal001 = 30; // Ámbito incorrecto de asignación
-
-// --------------------------------
-// Declaración de vectores de datos
-var lista001 = [ 'hola', 'casa', 'perro' , 'escuela']; // Array de 4 valores textuales
-var lista002 = [ 1, 5, 3 ]; // Array de 3 valores numéricos
-
-console.log("Primer valor de la lista 001: " + lista001[0]); // Mostrando por consola el primer valor de la lista 001
-// Los índices de un array de 4 valores van de 0 a 3
-
-// --------------------------------
-// Declaración de un objecto
-var objecto001 = {
-	atributo001 : "hola mundo",
-	atributo002 : true,
-	atributo003 : 10,
-	atributo004 : [10, 2, 5, 0],
-	atributo005: {
-		subAtributo001 : "Interno"
-	}
-};
-
-console.log(objecto001.atributo001);
-console.log(objecto001["atributo001"]);
-
-console.log(objecto001.atributo005.subAtributo001);
-
-							</xmp></pre>
-
-						</div>
-
-						
-					</div>
-				</div><!--/#feature-container-->
-
-				<hr>
-
-				<div id="tab-container">
-					<div class="row" style="font-size:17px">
-						<div class="col-md-12">
-							<h2 class="page-header">Operadores y estructuras de control</h2>
-
-							<p> Los operadores permiten manipular el valor de las variables, realizar operaciones matemáticas con sus valores y comparar diferentes variables. De esta forma, los operadores permiten a los programas realizar cálculos complejos y tomar decisiones lógicas en función de comparaciones y otros tipos de condiciones. </p>
-
-							<p> Los tipos básicos de operadores son: </br>
-							- Asignaciones (binario): =, +=, -=, *=, /= </br>
-							- Incremento/Decremento (Unario): ++, -- </br>
-							- Aritméticos (binarios): +, -, *, /, % </br>
-							- Relacionales (binarios): <, >, <= , >= </br>
-							- Igualdad, desigualdad: ==, != </br> 
-							- Condicionales: &&, || </p>
-
-							<pre>
-							<xmp style="text-align: left; font-size:12px">
-// Ejemplos de los operadores básicos
-var numerico001 = 0;
-
-// Asignaciones
-numerico001 = 10; // El valor de la variable numerico001 se ha asignado en 10
-numerico001 += 9; // Se le asigna a la variable su valor anterior sumandole 9
-numerico001 -= 17; // Se le asigna a la variable su valor anterior restandole 17
-numerico001 *= 2; // Se le asigna a la variable su valor anterior multiplicandolo por 2
-numerico001 /= 2; // Se le asigna a la variable su valor anterior dividiendolo por 2
-
-// Incremento/Decremento
-numerico001++; // Se le suma 1 al valor actual de la variable
-numerico001--; // Se le resta 1 al valor actual de la variable
-
-// Aritmeticos
-numerico001 = 1 + 1; // Suma
-numerico001 = 1 - 1; // Resta
-numerico001 = 1 * 2; // Multiplicación
-numerico001 = 4 / 2; // Division
-numerico001 = 3 % 2; // Resto de la division entera
-
-var booleano001 = true;
-
-// Relacionales
-booleano001 = 2 > 1; // Mayor que
-booleano001 = 1 < 2; // Menor que
-booleano001 = 5 >= 5; // Mayo o igual que
-booleano001 = 4 <= 5; // Menor o igual que
-
-// Igualdad/Desigualdad
-booleano001 = (5 == 5); // Igual a
-booleano001 = (3 != 5); // Distinto a
-booleano001 = ("hola" == "hola");
-
-// Condicionales
-var booleano002 = false;
-
-booleano001 = (true && true); // Operador "y" lógico
-booleano001 = (booleano002 || true); // Operador "o" lógico
-
-							</xmp>
-							</pre>
-
-							<p> Las sentencias de bloque son el tipo de sentencias más básicas y se utilizan para agrupar otras sentencias. Suelen estar definidas por una cabecera definitoria y un bloque de codigo definido entre llaves { }. Éstos bloques se usan principalmente para el control del flujo de ejecución del programa. </p>
-
-							<p> Sentencias condicionales: se define como un conjunto de comandos que se ejecutan si una condición es verdadera. JavaScript soporta las dos sentencias condicionales base: if...else y switch </p>
-
-							<blockquote>if (condición) {sentencia_1;} else { sentencia_2;}</blockquote>
-
-							<pre>
-							<xmp style="text-align: left; font-size:12px">
-// Ejemplos de sentencias condicionales if
-var condicion = true;
-var valor001 = 10;
-var valor002 = 5;
-var texto001 = "hola";
-var texto002 = "hola";
-var texto003 = "Adios";
-
-if (condicion) {
-	console.log("Como condicion es true, este texto debería mostrarse por consola");
-}
-
-if (valor001 <= 1) {
-	console.log("La valor 001 es 10, mayor que 1, por la tanto la condicion no se cumple y este texto no debería mostrarse por consola");
-} else {
-	console.log("Este texto debería mostrarse por consola como alternativa al fallar la primera condición");
-}
-
-if (texto001 == texto003) { // "hola" es distinto de "adios" por lo tanto la condición falla
-	console.log("Este texto no debería mostrarse");
-} else if (texto001 == texto002) {
-	console.log("Este texto sí debería mostrarse");
-} else {
-	console.log("Este texto no debería mostrarse");
-}
-							</xmp>
-							</pre>
-
-							<blockquote>switch (expresión) { </br>
-							  case etiqueta_1: </br>
-							    sentencias_1 </br>
-							    [break;] </br>
-							  case etiqueta_2: </br>
-							    sentencias_2 </br>
-							    [break;] </br>
-							    ... </br>
-							  default: </br>
-							    sentencias_por_defecto </br>
-							    [break;] </br>
-							}
-							</blockquote>
-
-							<pre>
-							<xmp style="text-align: left; font-size:12px">
-// Ejemplo de la sentencia condicional switch
-var variableDeSeleccion = "castillo";
-var segundaVariableNumerica = 1;
-
-switch (variableDeSeleccion) {
-	case "casa": // Si el contenido de la variable variableDeSeleccion es igual a "casa"
-		console.log("Se ha seleccionado una casa");
-		break;
-	case "hotel": // Si el contenido de la variable variableDeSeleccion es igual a "hotel"
-		console.log("Se ha seleccionado un hotel");
-		segundaVariableNumerica = 4;
-		break;
-	case "castillo": // Si el contenido de la variable variableDeSeleccion es igual a "castillo"
-		console.log("Se ha seleccionado un castillo");
-		segundaVariableNumerica = 3;
-		break;
-	// Si el contenido de la variable variableDeSeleccion no coincide con ninguna de las anteriores
-	default:
-		console.log("Selección no definida");
-		segundaVariableNumerica = 5;
-		break;
-}
-
-switch (segundaVariableNumerica) {
-	case 1:
-		console.log("El resultado es 1");
-		break;
-	case 2:
-		console.log("El resultado es 2");
-		break;
-	case 3:
-		console.log("El resultado es 3");
-		break;
-	case 4:
-		console.log("El resultado es 4");
-		break;
-	default:
-		console.log("Valor del resultado no definido");
-}
-
-							</xmp>
-							</pre>
-
-							<p> Bucles: se define como un conjunto de comandos que se ejecutan repetidamente cierta cantidad de veces. JavaScript soporta los dos tipos base de bucles: for... y while</p>
-
-							<blockquote>for ([expresionInicial]; [condicion]; [expresionIncremento]) </br>
-							sentencia</blockquote>
-
-							<pre>
-							<xmp style="text-align: left; font-size:12px">
-// Ejemplos de bucle for
-// Se usa la variable i como índice de ejecución y con valor inicial igual a 0
-// Se condiciona la repetición del bucle a que dicha variable sea menor que 10
-// Por ultimo se indica que en cada repetición la variable i va a aumentar su valor
-//   en 1 "i++"
-for (var i = 0; i < 10; i++) {
-	console.log(" - " + i);
-}
-
-// Se usa la variable i como referencia a cada uno de los objetos del array listaNumeros
-// Se usa un valor por iteración del bloque, recorriendolos en orden.
-var listaNumeros = [3, 5, 7, 9];
-for (var i of listaNumeros) {
-   console.log(i);
-}
-							</xmp>
-							</pre>
-
-							<blockquote>while (condicion) </br>
-							  sentencia</blockquote>
-
-							 <pre>
-							<xmp style="text-align: left; font-size:12px">
-// Ejemplos de bulces while
-// Se usa la variable valorCondicion para valorar la condición de continuación
-// Si la condición es verdadera, se ejecuta el bloque y después se vuelve a valorar
-//   si la condición sigue siendo verdadera para continuar o para el bucle
-var valorCondicion = 0;
-var valorNumerico = 0;
-
-while (valorCondicion < 5) {
-	valorCondicion++;
-
-	valorNumerico += valorCondicion;
-
-	console.log("- Resultado(" + valorCondicion + "): " + valorNumerico);
-}
-
-// Este tipo de bucle, se ejecuta primero el bloque de código y después se evalua la condición 
-//   para saber si se continua con las repeticiones del bucle o se detiene.
-var variableCondicional = false;
-
-do {
-	console.log("hola")
-} while (variableCondicional);
-							</xmp>
-							</pre>
-
-						</div>
-					</div>
-				</div><!--/#table-container-->
-
-            <div id="accordion-container">
-            	<div class="row" style="font-size:17px">
-                <h2 class="page-header">Funciones, definición y uso</h2>
-
-                <p> Una función es una porción de código reusable que puede ser llamada en cualquier momento desde nuestro programa. Se compone de una cabecera definitoria con un identificador y los parámetros a usar entre paréntesis. Seguido de un bloque de código a ejecutar cada vez que se llame a dicha función. </p>
-
-				<blockquote> function nombre_funcion(parametros) { <br>
-					instrucciones; <br>
-				}</blockquote>
-
-				<pre>
-				<xmp style="text-align: left; font-size:12px">
-
-// Ejemplos de definición y llamadas a funciones
-var variableGlobal001 = "texto global";
-
-// Definición de una función que no usa parámetros y no retorna valor alguno
-function holaMundo () {
-	console.log("hola mundo");
-}
-
-// Llamada a la funcion
-holaMundo();
-
-//------------------------------
-
-// Definición de una función que usa dos parámetros de entrada y no retorna valor alguno
-// La variable textoAMostrar contendrá el valor de tipo string a mostrar por consola
-// La variable numeroVeces se usará como contador de las veces a mostrar el texto anterior
-function mostrarTexto (textoAMostrar, numeroVeces) {
-	
-	for (var i = 1; i < numeroVeces; i++) {
-		console.log("El texto a mostrar por consola es: " + textoAMostrar);
-	}
-}
-
-// Llamadas a la función;
-mostrarTexto("hola", 2);
-mostrarTexto("feo", 1);
-mostrarTexto("HOLA MUNDO", 20);
-
-//------------------------------
-
-// Definición de una función que usa dos parámetros de entrada y retorna un valor numérico
-// Las variables primerValor y segundoValor contendran los valores numéricos a sumar
-function sumarValores (primerValor, segundoValor) {
-	console.log("Sumando " + primerValor + " y " + segundoValor);
-	return primerValor + segundoValor;
-}
-
-// Llamadas a la función
-var variableResultado = sumarValores(2, 2);
-variableResultado = sumarValores(1, 2);
-
-
-
-				</xmp>
-				</pre>
-
-                </div>
-            </div><!--/#accordion-container-->
-
-            <div id="progressbar-container">
-                <h2 class="page-header">HTML5 y JavaScript. Eventos y el árbol DOM</h2>
-                
-
-            </div><!--/#progressbar-container-->
-
-            <div id="map-container">
-                <h2 class="page-header">Introducción a JQuery</h2>
-                <!--<div id="gmap"></div>-->
-            </div><!--/#map-container-->
-
-            <div id="video-container">
-                <div class="row" style="font-size:17px">
-
-
-                </div>
-            </div><!--/#video-container-->
-
-        </div>
-    </section>           
-		<!-- ================================================================================================================ -->
-
-		<!-- ================================================================================================================ -->
-		<div id="custom-footer"></div>
-		<!--/#footer-->
-		<!-- ================================================================================================================ -->
-
-		<!-- ================================================================================================================ -->
 		<!-- Carga "tardía" de librerías de scripts externos -->
-		<script type="text/javascript" src="/script/jquery.js"></script>
-		<script type="text/javascript" src="/script/bootstrap.min.js"></script>
-		<script type="text/javascript" src="/script/lightbox.min.js"></script>
-		<script type="text/javascript" src="/script/wow.min.js"></script>
-		<script type="text/javascript" src="/script/main.js"></script>
-		<script type="text/javascript" src="/script/CustomComponents/customHeader.js"></script>
-		<script type="text/javascript" src="/script/CustomComponents/customFooter.js"></script>
-		<script type="text/javascript" src="/script/CustomComponents.js"></script>
-		<!-- ================================================================================================================ -->
+		<script type="text/javascript" src="../../script/external/jquery.js"></script>
+		<script type="text/javascript" src="../../script/external/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../../script/external/lightbox.min.js"></script>
+		<script type="text/javascript" src="../../script/external/wow.min.js"></script>
+		
+		<script type="text/javascript" src="../../script/main.js"></script>
+		<script type="text/javascript" src="../../script/CustomComponents/customHeader.js"></script>
+		<script type="text/javascript" src="../../script/CustomComponents/customFooter.js"></script>
+		<script type="text/javascript" src="../../script/CustomComponents.js"></script>
+		<script>
+			setPageLocationType (2); 
+		</script>
+<!-- ================================================================================================================ -->
 	</body>
-	<!-- ================================================================================================================ -->
 </html>

@@ -13,19 +13,25 @@
 		<meta name="author" content="G.R.P.">
 
 		<!-- Enlaces a archivos externos que definen estilos css -->
-		<link href="/style/imported-styles.css" rel="stylesheet">
+		<link href="../../style/external/bootstrap.min.css" rel="stylesheet">
+		<link href="../../style/external/font-awesome.min.css" rel="stylesheet">
+		<link href="../../style/external/animate.min.css" rel="stylesheet">
+		<link href="../../style/external/lightbox.css" rel="stylesheet">
+		<link href="../../style/main.css" rel="stylesheet">
+		<link href="../../style/responsive.css" rel="stylesheet">
+		<link href="../../style/customst.css" rel="stylesheet">
 
 		<!--[if lt IE 9]>
-			<script src="js/html5shiv.js"></script>
-			<script src="js/respond.min.js"></script>
+			<script src="../../script/external/html5shiv.js"></script>
+			<script src="../../script/external/respond.min.js"></script>
 		<![endif]-->
 
 		<!-- Enlaces a las imágenes a usar como iconos del navegador -->
-		<link rel="shortcut icon" href="/resources/image/ico/favicon.ico">
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/resources/image/ico/apple-touch-icon-144-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/resources/image/ico/apple-touch-icon-114-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/resources/image/ico/apple-touch-icon-72-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" href="/resources/image/ico/apple-touch-icon-57-precomposed.png">
+		<link rel="shortcut icon" href="../../resources/image/ico/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../resources/image/ico/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../resources/image/ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../resources/image/ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="../../resources/image/ico/apple-touch-icon-57-precomposed.png">
 
 	</head>
 	<!-- ================================================================================================================ -->
@@ -36,151 +42,163 @@
 	<!--    - Sección contenedora de todos los elementos renderizables por el navegador. 
 		    - Cargas "tardías" de recursos externos -->
 	<body class="homework-background">
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+			<div class="loader-section section-left"></div>
+			<div class="loader-section section-right"></div>
+		</div>
+
+		<div id="content">
 		<!--<div class="background-image homework-background"></div>-->
 		<!-- ================================================================================================================ -->
 		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<div id="custom-header"></div>
-		<!--/#header - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<!-- ================================================================================================================ -->
+			<div id="custom-header"></div>
+			<!--/#header - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+			<!-- ================================================================================================================ -->
 
-		<!-- ================================================================================================================ -->
-		<section id="page-breadcrumb" class="second">
-			<div class="vertical-center sun">
-				<div class="container">
-					<div class="row">
-						<div class="action">
-							<div id="cifp_section_header" class="post-thumb col-md-2 col-sm-2">
-								<a href="#"><img src="/resources/image/ejercicios/css2-bg.jpg" class="img-responsive" alt=""></a>
+			<!-- ================================================================================================================ -->
+			<section id="page-breadcrumb" class="second">
+				<div class="vertical-center sun">
+					<div class="container">
+						<div class="row">
+							<div class="action main-slider">
+								<div id="cifp_section_header" class="post-thumb col-md-2 col-sm-2">
+									<a href="#"><img src="../../resources/image/ejercicios/css2-bg.jpg" class="img-responsive" alt=""></a>
 
-							</div>
-							<div class="col-md-6 col-sm-6" style="margin-top: 2%;">
-								<h1 class="title white-border">CheatSheet web (HTML5, CSS3, BootStrap)</h1>
-								<p class="white-border">Ejercicio 2 (Individual)</p>
+								</div>
+								<div class="col-md-6 col-sm-6" style="margin-top: 2%;">
+									<h1 class="title white-border">CheatSheet web (HTML5, CSS3, BootStrap)</h1>
+									<p class="white-border">Ejercicio 2 (Individual)</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<!--/#page-breadcrumb-->
-		<!-- ================================================================================================================ -->
+			</section>
+			<!--/#page-breadcrumb-->
+			<!-- ================================================================================================================ -->
 
 
-		<section id="blog-details" class="">
-        <div class="container">
-            <div class="row">
-                <div id="cifp_container_ej" class="col-md-9 col-sm-7">
-                    <div class="row">
-                         <div class="col-md-12 col-sm-12">
-                            <div class="single-blog blog-details two-column">
-                               
-                                <div id="cifp_ejercicio" class="post-content overflow">
-                                    <h2 class="post-title bold"><a href="#">Recopilando recursos web</a></h2>
-                                    <!--<h3 class="post-author"><a href="#">Posted by micron News</a></h3>-->
-                                    <br/>
-                                    <p> Análisis y recopilación de recursos web para uso en futuros ejercicios. Crear una nueva vista o subpágina denominada "recursos" y sus correspondientes páginas hijas "HTML5", "CSS3" y "BootStrap". <br>
+			<section id="blog-details" class="">
+	        <div class="container">
+	            <div class="row">
+	                <div id="cifp_container_ej" class="col-md-9 col-sm-7">
+	                    <div class="row">
+	                         <div class="col-md-12 col-sm-12">
+	                            <div class="single-blog blog-details two-column">
+	                               
+	                                <div id="cifp_ejercicio" class="post-content overflow">
+	                                    <h2 class="post-title bold"><a href="#">Recopilando recursos web</a></h2>
+	                                    <!--<h3 class="post-author"><a href="#">Posted by micron News</a></h3>-->
+	                                    <br/>
+	                                    <p> Análisis y recopilación de recursos web para uso en futuros ejercicios. Crear una nueva vista o subpágina denominada "recursos" y sus correspondientes páginas hijas "HTML5", "CSS3" y "BootStrap". <br>
 
-                                    <br>
+	                                    <br>
 
-                                    <h2 class="post-title bold"><a href="#">Las subpáginas hijas han de tener las siguientes secciones:</a></h2>
+	                                    <h2 class="post-title bold"><a href="#">Las subpáginas hijas han de tener las siguientes secciones:</a></h2>
 
-                                    - ¿Qué es [HTML5 ; CSS3 ; BootStrap]? <br>
-      								... (Pequeña descripción o definición de cada uno de los lenguajes) <br>
-      								<br>
-      								- ¿Dónde me documento? <br>
-      								... (Listado básico de enlaces: páginas oficiales, de documentación, ayuda y o ejemplos) <br>
-      								<br>
-      								- Ejemplos básicos: (explicación, código, vista) <br>
-                                    <span style="display:inline-block; width: 2%;"></span>[HTML] <br>
-	         							<span style="display:inline-block; width: 4%;"></span>"Hola Mundo" Plantilla mínima de un archivo index.html <br>
-	            							<span style="display:inline-block; width: 6%;"></span> - Div <br>
-	         							<span style="display:inline-block; width: 4%;"></span>"Inputs" Ejemplos de elmentos de entrada o navegación <br>
-	            							<span style="display:inline-block; width: 6%;"></span> - Botón normal <br>
-	            							<span style="display:inline-block; width: 6%;"></span> - Botón radial <br>
-	            							<span style="display:inline-block; width: 6%;"></span> - Botón de selección <br>
-	            							<span style="display:inline-block; width: 6%;"></span> - Menú de selecció desplegable <br>
-	            							<span style="display:inline-block; width: 6%;"></span> - Panel de entrada de texto <br>
-	            							<span style="display:inline-block; width: 6%;"></span> - Sliders  <br>
+	                                    - ¿Qué es [HTML5 ; CSS3 ; BootStrap]? <br>
+	      								... (Pequeña descripción o definición de cada uno de los lenguajes) <br>
+	      								<br>
+	      								- ¿Dónde me documento? <br>
+	      								... (Listado básico de enlaces: páginas oficiales, de documentación, ayuda y o ejemplos) <br>
+	      								<br>
+	      								- Ejemplos básicos: (explicación, código, vista) <br>
+	                                    <span style="display:inline-block; width: 2%;"></span>[HTML] <br>
+		         							<span style="display:inline-block; width: 4%;"></span>"Hola Mundo" Plantilla mínima de un archivo index.html <br>
+		            							<span style="display:inline-block; width: 6%;"></span> - Div <br>
+		         							<span style="display:inline-block; width: 4%;"></span>"Inputs" Ejemplos de elmentos de entrada o navegación <br>
+		            							<span style="display:inline-block; width: 6%;"></span> - Botón normal <br>
+		            							<span style="display:inline-block; width: 6%;"></span> - Botón radial <br>
+		            							<span style="display:inline-block; width: 6%;"></span> - Botón de selección <br>
+		            							<span style="display:inline-block; width: 6%;"></span> - Menú de selecció desplegable <br>
+		            							<span style="display:inline-block; width: 6%;"></span> - Panel de entrada de texto <br>
+		            							<span style="display:inline-block; width: 6%;"></span> - Sliders  <br>
 
-	            						<span style="display:inline-block; width: 4%;"></span>"Outputs" Ejemplos de elementos de visionado de datos <br>
-	            							<span style="display:inline-block; width: 6%;"></span> - Campo de texto H1, ... , Hn + Span <br>
-	            							<span style="display:inline-block; width: 6%;"></span> - Tablas <br>
-	            							<span style="display:inline-block; width: 6%;"></span> - Imagenes <br>
-	            							<span style="display:inline-block; width: 6%;"></span> - Barras de progreso <br>
-	            							
-	          							<span style="display:inline-block; width: 4%;"></span>"Nuestro primer modal" <br>
-	          							<br>
-            						<span style="display:inline-block; width: 2%;"></span>[CSS]<br>
-         								<span style="display:inline-block; width: 4%;"></span>"Conociendo las clases" Plantilla básica de la definición un conjunto de estilos css<br>
-            								<span style="display:inline-block; width: 6%;"></span> - Selectores css<br>
-            								<br>
-         								<span style="display:inline-block; width: 4%;"></span>"Posicionamiento en css" Ejemplos del posicionamiento de elementos web usando css<br>
-            								<span style="display:inline-block; width: 6%;"></span> - Display <br>
-            								<span style="display:inline-block; width: 6%;"></span> - Position<br>
-            								<span style="display:inline-block; width: 6%;"></span> - Margin<br>
-            								<span style="display:inline-block; width: 6%;"></span> - Padding <br>
-            								<span style="display:inline-block; width: 6%;"></span> - Text-align<br>
-            								<br>
-         								<span style="display:inline-block; width: 4%;"></span>"Decorando en css" Ejemplos de edición de las decoraciones de elementos web<br>
-            								<span style="display:inline-block; width: 6%;"></span> - Background <br>
-            								<span style="display:inline-block; width: 6%;"></span> - Color <br>
-            								<span style="display:inline-block; width: 6%;"></span> - Border <br>
-            								<span style="display:inline-block; width: 6%;"></span> - Box-shadow <br>
-            								<span style="display:inline-block; width: 6%;"></span> - Font<br>
-            								<br>
-         								<span style="display:inline-block; width: 4%;"></span>"Media queries" Ejemplo del uso de distintas configuraciones de estilos según la resolución de la pantalla en la que se vea<br>
+		            						<span style="display:inline-block; width: 4%;"></span>"Outputs" Ejemplos de elementos de visionado de datos <br>
+		            							<span style="display:inline-block; width: 6%;"></span> - Campo de texto H1, ... , Hn + Span <br>
+		            							<span style="display:inline-block; width: 6%;"></span> - Tablas <br>
+		            							<span style="display:inline-block; width: 6%;"></span> - Imagenes <br>
+		            							<span style="display:inline-block; width: 6%;"></span> - Barras de progreso <br>
+		            							
+		          							<span style="display:inline-block; width: 4%;"></span>"Nuestro primer modal" <br>
+		          							<br>
+	            						<span style="display:inline-block; width: 2%;"></span>[CSS]<br>
+	         								<span style="display:inline-block; width: 4%;"></span>"Conociendo las clases" Plantilla básica de la definición un conjunto de estilos css<br>
+	            								<span style="display:inline-block; width: 6%;"></span> - Selectores css<br>
+	            								<br>
+	         								<span style="display:inline-block; width: 4%;"></span>"Posicionamiento en css" Ejemplos del posicionamiento de elementos web usando css<br>
+	            								<span style="display:inline-block; width: 6%;"></span> - Display <br>
+	            								<span style="display:inline-block; width: 6%;"></span> - Position<br>
+	            								<span style="display:inline-block; width: 6%;"></span> - Margin<br>
+	            								<span style="display:inline-block; width: 6%;"></span> - Padding <br>
+	            								<span style="display:inline-block; width: 6%;"></span> - Text-align<br>
+	            								<br>
+	         								<span style="display:inline-block; width: 4%;"></span>"Decorando en css" Ejemplos de edición de las decoraciones de elementos web<br>
+	            								<span style="display:inline-block; width: 6%;"></span> - Background <br>
+	            								<span style="display:inline-block; width: 6%;"></span> - Color <br>
+	            								<span style="display:inline-block; width: 6%;"></span> - Border <br>
+	            								<span style="display:inline-block; width: 6%;"></span> - Box-shadow <br>
+	            								<span style="display:inline-block; width: 6%;"></span> - Font<br>
+	            								<br>
+	         								<span style="display:inline-block; width: 4%;"></span>"Media queries" Ejemplo del uso de distintas configuraciones de estilos según la resolución de la pantalla en la que se vea<br>
 
-         							<span style="display:inline-block; width: 2%;"></span>[CSS+BootStrap]<br>
-         								<span style="display:inline-block; width: 4%;"></span>"Entendiendo las resoluciones ajustables" Enlazando los archivos bootstrap en nuestra web y el primer ejemplo de una sección responsiva<br>
+	         							<span style="display:inline-block; width: 2%;"></span>[CSS+BootStrap]<br>
+	         								<span style="display:inline-block; width: 4%;"></span>"Entendiendo las resoluciones ajustables" Enlazando los archivos bootstrap en nuestra web y el primer ejemplo de una sección responsiva<br>
 
-                                    </p>
+	                                    </p>
 
-                                    <br/>
+	                                    <br/>
 
-                                    <h2 class="post-title bold"><a href="#">Formato de la entrega</a></h2>
+	                                    <h2 class="post-title bold"><a href="#">Formato de la entrega</a></h2>
 
-                                    <br/>
+	                                    <br/>
 
-                                    <blockquote> 
-                                          <p> [Nombre del ejercicio] <br> <br>
+	                                    <blockquote> 
+	                                          <p> [Nombre del ejercicio] <br> <br>
 
-                                          Actualización del mapa de navegación: ... <br> <br>
+	                                          Actualización del mapa de navegación: ... <br> <br>
 
-                                          Actualización de MockUps: ... <br> <br>
+	                                          Actualización de MockUps: ... <br> <br>
 
-                                          Recursos: ...(Lista de enlaces usados para la realización del ejercicio) <br> <br>
+	                                          Recursos: ...(Lista de enlaces usados para la realización del ejercicio) <br> <br>
 
-                                          Enlaces: ... (Lista de enlaces a las subpáginas de GitHub creadas en este ejercicio) <br> <br>
+	                                          Enlaces: ... (Lista de enlaces a las subpáginas de GitHub creadas en este ejercicio) <br> <br>
 
-                                          </p>
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                 </div>
-                
-            </div>
-        </div>
-    </section>
-    <!--/#blog-->
+	                                          </p>
+	                                    </blockquote>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                 </div>
+	                
+	            </div>
+	        </div>
+	    </section>
+	    <!--/#blog-->
 
 
-		<!-- ================================================================================================================ -->
-		<div id="custom-footer"></div>
+			<!-- ================================================================================================================ -->
+			<div id="custom-footer"></div>
+		</div>
 		<!--/#footer-->
 		<!-- ================================================================================================================ -->
 
 		<!-- ================================================================================================================ -->
 		<!-- Carga "tardía" de librerías de scripts externos -->
-		<script type="text/javascript" src="/script/jquery.js"></script>
-		<script type="text/javascript" src="/script/bootstrap.min.js"></script>
-		<script type="text/javascript" src="/script/lightbox.min.js"></script>
-		<script type="text/javascript" src="/script/wow.min.js"></script>
-		<script type="text/javascript" src="/script/main.js"></script>
-		<script type="text/javascript" src="/script/CustomComponents/customHeader.js"></script>
-		<script type="text/javascript" src="/script/CustomComponents/customFooter.js"></script>
-		<script type="text/javascript" src="/script/CustomComponents.js"></script>
+		<script type="text/javascript" src="../../script/external/jquery.js"></script>
+		<script type="text/javascript" src="../../script/external/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../../script/external/lightbox.min.js"></script>
+		<script type="text/javascript" src="../../script/external/wow.min.js"></script>
+		
+		<script type="text/javascript" src="../../script/main.js"></script>
+		<script type="text/javascript" src="../../script/CustomComponents/customHeader.js"></script>
+		<script type="text/javascript" src="../../script/CustomComponents/customFooter.js"></script>
+		<script type="text/javascript" src="../../script/CustomComponents.js"></script>
+		<script>
+			setPageLocationType (2); 
+		</script>
 		<!-- ================================================================================================================ -->
 	</body>
 	<!-- ================================================================================================================ -->

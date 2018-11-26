@@ -13,19 +13,25 @@
 		<meta name="author" content="G.R.P.">
 
 		<!-- Enlaces a archivos externos que definen estilos css -->
-		<link href="/style/imported-styles.css" rel="stylesheet">
+		<link href="./style/external/bootstrap.min.css" rel="stylesheet">
+		<link href="./style/external/font-awesome.min.css" rel="stylesheet">
+		<link href="./style/external/animate.min.css" rel="stylesheet">
+		<link href="./style/external/lightbox.css" rel="stylesheet">
+		<link href="./style/main.css" rel="stylesheet">
+		<link href="./style/responsive.css" rel="stylesheet">
+		<link href="./style/customst.css" rel="stylesheet">
 
 		<!--[if lt IE 9]>
-			<script src="js/html5shiv.js"></script>
-			<script src="js/respond.min.js"></script>
+			<script src="./script/external/html5shiv.js"></script>
+			<script src="./script/external/respond.min.js"></script>
 		<![endif]-->
 
 		<!-- Enlaces a las imágenes a usar como iconos del navegador -->
-		<link rel="shortcut icon" href="resources/image/ico/favicon.ico">
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="resources/image/ico/apple-touch-icon-144-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="resources/image/ico/apple-touch-icon-114-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="resources/image/ico/apple-touch-icon-72-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" href="resources/image/ico/apple-touch-icon-57-precomposed.png">
+		<link rel="shortcut icon" href="./resources/image/ico/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="./resources/image/ico/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="./resources/image/ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="./resources/image/ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="./resources/image/ico/apple-touch-icon-57-precomposed.png">
 
 	</head>
 	<!-- ================================================================================================================ -->
@@ -36,50 +42,71 @@
 	<!--    - Sección contenedora de todos los elementos renderizables por el navegador. 
 		    - Cargas "tardías" de recursos externos -->
 	<body>
-		<div class="background-image"></div>
-		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<div id="custom-header"></div>
-		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-		<!-- ================================================================================================================ -->
-		<section id="home-slider">
-			<div class="container">
-				<div class="row">
-					<div class="main-slider">
-						<div id="home-card" class="slide-text">
-							<div id="home-card-top"></div>
-							<h1>RAY 2018 - Interfaces de usuarios</h1>
-							<p>Aprendiendo juntos los conceptos y usos de las interfaces de usuario en proyectos multimedia</p>
-							<a href="pages/teoria.html" class="btn btn-common">Empecemos</a>
-							<div id="home-card-bottom"></div>
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+			<div class="loader-section section-left"></div>
+			<div class="loader-section section-right"></div>
+		</div>
+
+		<div id="content">
+
+			<div class="background-image"></div>
+			<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+			<div id="custom-header"></div>
+			<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+			<!-- ================================================================================================================ -->
+			<section id="home-slider">
+				<div class="container">
+					<div class="row">
+						<div class="main-slider">
+							<div id="home-card" class="slide-text">
+								<div id="home-card-top"></div>
+								<h1>RAY 2018 - Interfaces de usuarios</h1>
+								<p>Aprendiendo juntos los conceptos y usos de las interfaces de usuario en proyectos multimedia</p>
+								<a href="pages/teoria.html" class="btn btn-common">Empecemos</a>
+								<div id="home-card-bottom"></div>
+							</div>
+
+							<div class="slider-hill js-tilt" data-tilt="" data-tilt-glare="true" data-tilt-maxGlare="0.1" data-tilt-scale="0.9" data-tilt-reset="false" style="transform-style: preserve-3d; text-align: center; transform: translateZ(0px);">
+								<img id="tilt-image-effect" src="resources/image/home/slider/hill.png"  class="tilt-effect-001">
+							</div>
+
+							<!--<img src="resources/image/home/slider/hill.png" class="slider-hill" alt="slider image" data-tilt style="transform-style: preserve-3d;">-->
+
+
+							<!--<img src="resources/image/home/slider/house.png" class="slider-house" alt="slider image">
+							<img src="resources/image/home/slider/sun.png" class="slider-sun" alt="slider image">
+							<img src="resources/image/home/slider/birds1.png" class="slider-birds1" alt="slider image">
+							<img src="resources/image/home/slider/birds2.png" class="slider-birds2" alt="slider image">-->
 						</div>
-
-						<img src="resources/image/home/slider/hill.png" class="slider-hill" alt="slider image">
-						<img src="resources/image/home/slider/house.png" class="slider-house" alt="slider image">
-						<img src="resources/image/home/slider/sun.png" class="slider-sun" alt="slider image">
-						<img src="resources/image/home/slider/birds1.png" class="slider-birds1" alt="slider image">
-						<img src="resources/image/home/slider/birds2.png" class="slider-birds2" alt="slider image">
 					</div>
 				</div>
-			</div>
-			<div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
-		</section>
-		<!--/#home-slider-->
-		<!-- ================================================================================================================ -->
+				<div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
+			</section>
+			<!--/#home-slider-->
+			<!-- ================================================================================================================ -->
 
-		<!-- ================================================================================================================ -->
-		<div id="custom-footer"></div>
+			<!-- ================================================================================================================ -->
+			<div id="custom-footer"></div>
+
+		</div>
 
 		<!-- ================================================================================================================ -->
 		<!-- Carga "tardía" de librerías de scripts externos -->
-		<script type="text/javascript" src="script/jquery.js"></script>
-		<script type="text/javascript" src="script/bootstrap.min.js"></script>
-		<script type="text/javascript" src="script/lightbox.min.js"></script>
-		<script type="text/javascript" src="script/wow.min.js"></script>
-		<script type="text/javascript" src="script/main.js"></script>
-		<script type="text/javascript" src="script/CustomComponents/customHeader.js"></script>
-		<script type="text/javascript" src="script/CustomComponents/customFooter.js"></script>
-		<script type="text/javascript" src="script/CustomComponents.js"></script>
+		<script type="text/javascript" src="./script/external/jquery.js"></script>
+		<script type="text/javascript" src="./script/external/bootstrap.min.js"></script>
+		<script type="text/javascript" src="./script/external/lightbox.min.js"></script>
+		<script type="text/javascript" src="./script/external/wow.min.js"></script>
+		<script type="text/javascript" src="./script/tilt.jquery.js"></script>
+		<script type="text/javascript" src="./script/main.js"></script>
+		<script type="text/javascript" src="./script/CustomComponents/customHeader.js"></script>
+		<script type="text/javascript" src="./script/CustomComponents/customFooter.js"></script>
+		<script type="text/javascript" src="./script/CustomComponents.js"></script>
+		<script>
+			setPageLocationType (0); 
+		</script>
 		<!-- ================================================================================================================ -->
 	</body>
 	<!-- ================================================================================================================ -->

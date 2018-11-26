@@ -13,19 +13,25 @@
 		<meta name="author" content="G.R.P.">
 
 		<!-- Enlaces a archivos externos que definen estilos css -->
-		<link href="/style/imported-styles.css" rel="stylesheet">
+		<link href="../../style/external/bootstrap.min.css" rel="stylesheet">
+		<link href="../../style/external/font-awesome.min.css" rel="stylesheet">
+		<link href="../../style/external/animate.min.css" rel="stylesheet">
+		<link href="../../style/external/lightbox.css" rel="stylesheet">
+		<link href="../../style/main.css" rel="stylesheet">
+		<link href="../../style/responsive.css" rel="stylesheet">
+		<link href="../../style/customst.css" rel="stylesheet">
 
 		<!--[if lt IE 9]>
-			<script src="js/html5shiv.js"></script>
-			<script src="js/respond.min.js"></script>
+			<script src="../../script/external/html5shiv.js"></script>
+			<script src="../../script/external/respond.min.js"></script>
 		<![endif]-->
 
 		<!-- Enlaces a las imágenes a usar como iconos del navegador -->
-		<link rel="shortcut icon" href="/resources/image/ico/favicon.ico">
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/resources/image/ico/apple-touch-icon-144-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/resources/image/ico/apple-touch-icon-114-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/resources/image/ico/apple-touch-icon-72-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" href="/resources/image/ico/apple-touch-icon-57-precomposed.png">
+		<link rel="shortcut icon" href="../../resources/image/ico/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../resources/image/ico/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../resources/image/ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../resources/image/ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="../../resources/image/ico/apple-touch-icon-57-precomposed.png">
 
 	</head>
 	<!-- ================================================================================================================ -->
@@ -36,98 +42,110 @@
 	<!--    - Sección contenedora de todos los elementos renderizables por el navegador. 
 		    - Cargas "tardías" de recursos externos -->
 	<body class="homework-background">
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+			<div class="loader-section section-left"></div>
+			<div class="loader-section section-right"></div>
+		</div>
+
+		<div id="content">
 		<!--<div class="background-image homework-background"></div>-->
 		<!-- ================================================================================================================ -->
 		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<div id="custom-header"></div>
-		<!--/#header - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<!-- ================================================================================================================ -->
+			<div id="custom-header"></div>
+			<!--/#header - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+			<!-- ================================================================================================================ -->
 
-		<!-- ================================================================================================================ -->
-		<section id="page-breadcrumb" class="second">
-			<div class="vertical-center sun">
-				<div class="container">
-					<div class="row">
-						<div class="action">
-							<div id="cifp_section_header" class="post-thumb col-md-2 col-sm-2">
-								<a href="#"><img src="/resources/image/ejercicios/maxresHTMLCSSBack.jpg" class="img-responsive" alt=""></a>
+			<!-- ================================================================================================================ -->
+			<section id="page-breadcrumb" class="second">
+				<div class="vertical-center sun">
+					<div class="container">
+						<div class="row">
+							<div class="action main-slider">
+								<div id="cifp_section_header" class="post-thumb col-md-2 col-sm-2">
+									<a href="#"><img src="../../resources/image/ejercicios/maxresHTMLCSSBack.jpg" class="img-responsive" alt=""></a>
 
-							</div>
-							<div class="col-md-6 col-sm-6" style="margin-top: 2%;">
-								<h1 class="title white-border">Introducción a las interfaces de usuario (HTML5, CSS3)</h1>
-								<p class="white-border">Ejercicio 1 (Individual)</p>
+								</div>
+								<div class="col-md-6 col-sm-6" style="margin-top: 2%;">
+									<h1 class="title white-border">Introducción a las interfaces de usuario (HTML5, CSS3)</h1>
+									<p class="white-border">Ejercicio 1 (Individual)</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<!--/#page-breadcrumb-->
-		<!-- ================================================================================================================ -->
+			</section>
+			<!--/#page-breadcrumb-->
+			<!-- ================================================================================================================ -->
 
 
-		<section id="blog-details" class="">
-        <div class="container">
-            <div class="row">
-                <div id="cifp_container_ej" class="col-md-9 col-sm-7">
-                    <div class="row">
-                         <div class="col-md-12 col-sm-12">
-                            <div class="single-blog blog-details two-column">
-                                
-                                <div id="cifp_ejercicio" class="post-content overflow">
-                                    <h2 class="post-title bold"><a href="#">Creando nuestra primera página web</a></h2>
-                                    <!--<h3 class="post-author"><a href="#">Posted by micron News</a></h3>-->
-                                    <br/>
-                                    <p> Creación de la sección de inicio de una página web personal para uso del alumno(Ficha personal). Primeros pasos con html, css y el control de versiones (GitHub) <br> <br>
+			<section id="blog-details" class="">
+	        <div class="container">
+	            <div class="row">
+	                <div id="cifp_container_ej" class="col-md-9 col-sm-7">
+	                    <div class="row">
+	                         <div class="col-md-12 col-sm-12">
+	                            <div class="single-blog blog-details two-column">
+	                                
+	                                <div id="cifp_ejercicio" class="post-content overflow">
+	                                    <h2 class="post-title bold"><a href="#">Creando nuestra primera página web</a></h2>
+	                                    <!--<h3 class="post-author"><a href="#">Posted by micron News</a></h3>-->
+	                                    <br/>
+	                                    <p> Creación de la sección de inicio de una página web personal para uso del alumno(Ficha personal). Primeros pasos con html, css y el control de versiones (GitHub) <br> <br>
 
-                                    Introducción al manejo de plantillas. Descargar y crear un repositorio nuevo en GitHub con la plantilla adaptada proporcionada por el profesor (https://github.com/wyllmancifp/RAY-Template) <br> <br>
+	                                    Introducción al manejo de plantillas. Descargar y crear un repositorio nuevo en GitHub con la plantilla adaptada proporcionada por el profesor (https://github.com/wyllmancifp/RAY-Template) <br> <br>
 
-                                    Modificar la plantilla del repositorio recien creado adaptandola a sus diseños y estilos propios, además de integrar la página de inicio, creada al principio.</p>
+	                                    Modificar la plantilla del repositorio recien creado adaptandola a sus diseños y estilos propios, además de integrar la página de inicio, creada al principio.</p>
 
-                                    <br/>
+	                                    <br/>
 
-                                    <h2 class="post-title bold"><a href="#">Formato de la entrega</a></h2>
-                                    
-                                    <br/>
+	                                    <h2 class="post-title bold"><a href="#">Formato de la entrega</a></h2>
+	                                    
+	                                    <br/>
 
-                                    <blockquote> 
-                                          <p>[Nombre del ejercicio] <br> <br>
+	                                    <blockquote> 
+	                                          <p>[Nombre del ejercicio] <br> <br>
 
-                                          Descripción: ... (Descripción corta, de no más de uno o dos párrafos, que describa el formato y la temática de la página) <br> <br>
+	                                          Descripción: ... (Descripción corta, de no más de uno o dos párrafos, que describa el formato y la temática de la página) <br> <br>
 
-                                          Mapa de navegación: ... (Descripción corta de las distintas vista o subpáginas a crear) <br> <br>
+	                                          Mapa de navegación: ... (Descripción corta de las distintas vista o subpáginas a crear) <br> <br>
 
-                                          MockUps: ... (Diagramas de capas o elementos de cada una de las subpáginas) <br> <br>
+	                                          MockUps: ... (Diagramas de capas o elementos de cada una de las subpáginas) <br> <br>
 
-                                          Recursos: ... (Lista de lenguajes, librerías, software y tecnologías a usar) </p>
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                 </div>
-                
-            </div>
-        </div>
-    </section>
-    <!--/#blog-->
+	                                          Recursos: ... (Lista de lenguajes, librerías, software y tecnologías a usar) </p>
+	                                    </blockquote>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                 </div>
+	                
+	            </div>
+	        </div>
+	    </section>
+	    <!--/#blog-->
 
 
-		<!-- ================================================================================================================ -->
-		<div id="custom-footer"></div>
+			<!-- ================================================================================================================ -->
+			<div id="custom-footer"></div>
+		</div>
 		<!--/#footer-->
 		<!-- ================================================================================================================ -->
 
 		<!-- ================================================================================================================ -->
 		<!-- Carga "tardía" de librerías de scripts externos -->
-		<script type="text/javascript" src="/script/jquery.js"></script>
-		<script type="text/javascript" src="/script/bootstrap.min.js"></script>
-		<script type="text/javascript" src="/script/lightbox.min.js"></script>
-		<script type="text/javascript" src="/script/wow.min.js"></script>
-		<script type="text/javascript" src="/script/main.js"></script>
-		<script type="text/javascript" src="/script/CustomComponents/customHeader.js"></script>
-		<script type="text/javascript" src="/script/CustomComponents/customFooter.js"></script>
-		<script type="text/javascript" src="/script/CustomComponents.js"></script>
+		<script type="text/javascript" src="../../script/external/jquery.js"></script>
+		<script type="text/javascript" src="../../script/external/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../../script/external/lightbox.min.js"></script>
+		<script type="text/javascript" src="../../script/external/wow.min.js"></script>
+		
+		<script type="text/javascript" src="../../script/main.js"></script>
+		<script type="text/javascript" src="../../script/CustomComponents/customHeader.js"></script>
+		<script type="text/javascript" src="../../script/CustomComponents/customFooter.js"></script>
+		<script type="text/javascript" src="../../script/CustomComponents.js"></script>
+		<script>
+			setPageLocationType (2); 
+		</script>
 		<!-- ================================================================================================================ -->
 	</body>
 	<!-- ================================================================================================================ -->
