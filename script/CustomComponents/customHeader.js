@@ -69,15 +69,9 @@ function createNavbar(rootIndex) {
 						<ul role="menu" class="sub-menu">
 							<li><a href="${rootPathAux}pages/ejercicios/ejercicio001.html">Ejercicios 1</a></li>
 							<li><a href="${rootPathAux}pages/ejercicios/ejercicio002.html">Ejercicios 2</a></li>
+							<li><a href="${rootPathAux}pages/ejercicios/ejercicio003.html">Ejercicios 3</a></li>
 						</ul>
 					</li>
-
-					<!--<li class="dropdown"><a href="${rootPathAux}pages/portfolio.html">Portfolio <i class="fa fa-angle-down"></i></a>
-						<ul role="menu" class="sub-menu">
-							<li><a href="${rootPathAux}pages/portfolio/galeria.html">Galeria</a></li>
-							<li><a href="${rootPathAux}pages/portfolio/cv.html ">Curriculum Vitae</a></li>
-						</ul>
-					</li>-->
 
 					<li class="dropdown"><a href="${rootPathAux}pages/recursos.html">Recursos <i class="fa fa-angle-down"></i></a>
 						<ul role="menu" class="sub-menu">
