@@ -1,5 +1,5 @@
 const customFooterTem = `
-<footer id="footer">
+<footer id="footer" style="background-color: #ffffff4d; border-top: 2px solid #0000004d;">
 	<div id="footer-container" class="container" style="padding-top: 10px;">
 		
 		<div class="row">
