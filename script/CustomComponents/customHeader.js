@@ -92,6 +92,14 @@ function createNavbar(rootIndex) {
 							<li><a href="${rootPathAux}pages/proximamente.html">Three.js</a></li>
 						</ul>
 					</li>
+
+					<li class="dropdown"><a href="${rootPathAux}pages/videogames.html">Videojuegos <i class="fa fa-angle-down"></i></a>
+								<ul role="menu" class="sub-menu">
+									<li><a href="${rootPathAux}pages/videogames/bricks.html">Bricks</a></li>
+									
+
+								</ul>
+							</li>
 				</ul>
 			</div>
 			<div class="search">

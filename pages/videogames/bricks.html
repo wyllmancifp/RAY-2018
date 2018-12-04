@@ -8,7 +8,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>Galería | RAY 2018</title>
+		<title>Bricks | RAY 2018</title>
 		<meta name="description" content="Contenido, teoría y ejercicios de la asignatura RAY - 2018">
 		<meta name="author" content="G.R.P.">
 
@@ -20,6 +20,7 @@
 		<link href="../../style/main.css" rel="stylesheet">
 		<link href="../../style/responsive.css" rel="stylesheet">
 		<link href="../../style/customst.css" rel="stylesheet">
+		<link href="../../style/videogames/bricks.css" rel="stylesheet">
 
 		<!--[if lt IE 9]>
 			<script src="../../script/external/html5shiv.js"></script>
@@ -49,41 +50,25 @@
 		</div>
 
 		<div id="content">
-		<!-- ================================================================================================================ -->
-		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- ================================================================================================================ -->
+			<div class="background-image"></div>
 			<div id="custom-header"></div>
-			<!--/#header - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-			<!-- ================================================================================================================ -->
+<!-- ================================================================================================================ -->
 
-			<!-- ================================================================================================================ -->
-			<section id="home-slider">
-				<div class="container">
-					<div class="row">
-						<div class="main-slider">
-							<div class="slide-text">
-								<h1>Galería - ...</h1>
-								<p>...</p>
-								<!--<a href="#" class="btn btn-common">Empecemos</a>-->
-							</div>
-
-							<img src="../../resources/image/home/slider/hill.png" class="slider-hill" alt="slider image">
-							<img src="../../resources/image/home/slider/house.png" class="slider-house" alt="slider image">
-							<img src="../../resources/image/home/slider/sun.png" class="slider-sun" alt="slider image">
-							<img src="../../resources/image/home/slider/birds1.png" class="slider-birds1" alt="slider image">
-							<img src="../../resources/image/home/slider/birds2.png" class="slider-birds2" alt="slider image">
-						</div>
-					</div>
+<!-- ================================================================================================================ -->
+			<section id="game-section">
+				<div id="gameBackground"></div>
+				<canvas id="gameCanvas" width="480" height="320"></canvas>
+				<div id="gameButtonsSec">
+					<!--<button id="startButton" type="button">Iniciar</button>--> 
+					<button id="reloadButton" type="button" onclick="reload();">Recargar</button> 
 				</div>
-				<div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
 			</section>
-			<!--/#home-slider-->
-			<!-- ================================================================================================================ -->
-
-			<!-- ================================================================================================================ -->
+<!-- ================================================================================================================ -->
+<!-- ================================================================================================================ -->
 			<div id="custom-footer"></div>
 		</div>
-		<!--/#footer-->
-		<!-- ================================================================================================================ -->
+<!-- ================================================================================================================ -->
 
 		<!-- ================================================================================================================ -->
 		<!-- Carga "tardía" de librerías de scripts externos -->
@@ -96,6 +81,7 @@
 		<script type="text/javascript" src="../../script/CustomComponents/customHeader.js"></script>
 		<script type="text/javascript" src="../../script/CustomComponents/customFooter.js"></script>
 		<script type="text/javascript" src="../../script/CustomComponents.js"></script>
+		<script type="text/javascript" src="../../script/videogames/bricks.js"></script>
 		<script>
 			setPageLocationType (2); 
 		</script>
