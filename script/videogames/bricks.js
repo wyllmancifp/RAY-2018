@@ -219,6 +219,8 @@ function check_wall_collisions () {
 				draw_pauseMsg ();
 				
 				alert("Pierde una vida");
+				user.rightPressed = false;
+				user.leftPressed = false;
 			}
 		}
 	}
@@ -307,6 +309,10 @@ function update_tick() {
 
 function reload () {
 	config.game_state = 0;
+
+	user.rightPressed = false;
+	user.leftPressed = false;
+
 	user.lives = 5;
 	user.score = 0;
 
