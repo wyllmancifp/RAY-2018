@@ -345,7 +345,6 @@ function init () {
 	//document.addEventListener("mousemove", mouseMoveHandler, false);
 
 	setInterval(update_tick, 10);
-
 }
 
 

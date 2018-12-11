@@ -96,7 +96,7 @@ function createNavbar(rootIndex) {
 					<li class="dropdown"><a href="${rootPathAux}pages/videogames.html">Videojuegos <i class="fa fa-angle-down"></i></a>
 								<ul role="menu" class="sub-menu">
 									<li><a href="${rootPathAux}pages/videogames/bricks.html">Bricks</a></li>
-									
+									<li><a href="${rootPathAux}pages/videogames/jumping.html">Jumping</a></li>
 
 								</ul>
 							</li>
