@@ -20,7 +20,7 @@
 		<link href="../../style/main.css" rel="stylesheet">
 		<link href="../../style/responsive.css" rel="stylesheet">
 		<link href="../../style/customst.css" rel="stylesheet">
-		<link href="../../style/videogames/bricks.css" rel="stylesheet">
+		<link href="../../style/videogames/jump.css" rel="stylesheet">
 
 		<!--[if lt IE 9]>
 			<script src="../../script/external/html5shiv.js"></script>
@@ -58,10 +58,12 @@
 <!-- ================================================================================================================ -->
 			<section id="game-section">
 				<div id="gameBackground"></div>
-				<canvas id="gameCanvas" width="480" height="320"></canvas>
+				<canvas id="gameCanvas" width="480" height="320">
+					<p>Tu navegador no soporta el uso de canvas</p>
+				</canvas>
 				<div id="gameButtonsSec">
 					<!--<button id="startButton" type="button">Iniciar</button>--> 
-					<button id="reloadButton" type="button" onclick="reload();">Recargar</button> 
+					<button id="reloadButton" type="button" onclick="initGame ();">Cargar</button> 
 				</div>
 			</section>
 <!-- ================================================================================================================ -->
@@ -81,7 +83,7 @@
 		<script type="text/javascript" src="../../script/CustomComponents/customHeader.js"></script>
 		<script type="text/javascript" src="../../script/CustomComponents/customFooter.js"></script>
 		<script type="text/javascript" src="../../script/CustomComponents.js"></script>
-		<!--<script type="text/javascript" src="../../script/videogames/bricks.js"></script>-->
+		<script type="text/javascript" src="../../script/videogames/jump.js"></script>-->
 		<script>
 			setPageLocationType (2); 
 		</script>
