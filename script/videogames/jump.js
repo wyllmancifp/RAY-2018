@@ -89,9 +89,11 @@ var player = {
 	update : function () {
 		if (player.current_pos_y > (htmlEngine.game_canvas.height - player.height)) {
 			player.gravitySpeed = 0;
+			player.gravity = 0;
+			player.current_pos_y -= 1;
 		} else {
 			player.gravitySpeed += player.gravity;
-			player.current_pos_x += player.speedX;
+			//player.current_pos_x += player.speedX;
 			player.current_pos_y += player.speedY + player.gravitySpeed;
 		}
 
@@ -225,11 +227,31 @@ function draw_image () {
 }
 
 function draw_startMsg () {
-	// TODO: 
+	htmlEngine.game_ctx.fillStyle = "black";
+	htmlEngine.game_ctx.fillRect((htmlEngine.game_canvas.width / 2) - 100 , 
+								 (htmlEngine.game_canvas.height / 2) - 50, 
+								 200, 
+								 115);
+	
+	htmlEngine.game_ctx.font = "16px Arial";
+	htmlEngine.game_ctx.fillStyle = "white";
+	htmlEngine.game_ctx.fillText("Presione 's' para empezar", 
+								(htmlEngine.game_canvas.width / 2) - 94, 
+								(htmlEngine.game_canvas.height / 2) - 20);
 }
 
 function draw_pauseMsg () {
-	// TODO:
+	htmlEngine.game_ctx.fillStyle = "black";
+	htmlEngine.game_ctx.fillRect((htmlEngine.game_canvas.width / 2) - 100 , 
+								 (htmlEngine.game_canvas.height / 2) - 50, 
+								 200, 
+								 115);
+	
+	htmlEngine.game_ctx.font = "16px Arial";
+	htmlEngine.game_ctx.fillStyle = "white";
+	htmlEngine.game_ctx.fillText("Presione 's' para continuar", 
+								(htmlEngine.game_canvas.width / 2) - 94, 
+								(htmlEngine.game_canvas.height / 2) - 20);
 }
 
 
@@ -238,14 +260,20 @@ function draw_pauseMsg () {
 function keyDownHandler(e) {
 	//TODO:
 	if(e.keyCode == 83) {
-		player.gravity = -0.2;
+		if (htmlEngine.game_state == 2) {
+			htmlEngine.game_state = 1;
+		} else {
+			player.gravity = -0.2;
+		}
 	}
 }
 
 function keyUpHandler(e) {
 	//TODO:
 	if(e.keyCode == 83) {
-		player.gravity = 0.05;
+		if(htmlEngine.game_state == 1) {
+			player.gravity = 0.05;
+		}
 	}
 }
 
@@ -320,14 +348,16 @@ function initState0 () {
 								  htmlEngine.game_canvas.width, 
 								  htmlEngine.game_canvas.height);
 
+	draw_startMsg();
+
 	terrain.draw();
 	player.draw();
 	scorePanel.draw();
 	
 
-	alert("Start Game");
+	//alert("Start Game");
 
-	htmlEngine.game_state = 1; 
+	htmlEngine.game_state = 2; 
 	//draw_circle ();
 	//draw_image ();
 }
