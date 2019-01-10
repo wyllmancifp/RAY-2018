@@ -58,9 +58,9 @@ function createNavbar(rootIndex) {
 				<ul class="nav navbar-nav navbar-right">
 					<li class="active"><a href="${rootPathAux}index.html">Inicio</a></li>
 
-					<li class="dropdown"><a href="${rootPathAux}pages/teoria.html">Teoría <i class="fa fa-angle-down"></i></a>
+					<li class="dropdown"><a href="${rootPathAux}pages/teoria.html">Asignatura <i class="fa fa-angle-down"></i></a>
 						<ul role="menu" class="sub-menu">
-							<!--<li><a href="${rootPathAux}pages/teoria/tema001.html">Tema 1</a></li>-->
+							<!--<li><a href="${rootPathAux}pages/teoria/tema001.html">Temario</a></li>-->
 							<li><a href="${rootPathAux}pages/proximamente.html">Tema 1</a></li>
 						</ul>
 					</li>
